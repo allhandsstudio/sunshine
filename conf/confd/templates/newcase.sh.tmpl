@@ -1,0 +1,11 @@
+#!/bin/bash
+
+mkdir -p /var/cesm
+cd /var/cesm
+/cesm-1_2_2/scripts/create_newcase \
+  -case case1 \
+  -compset {{ getv "COMPSET" "X" }} \
+  -res {{ getv "GRID" "f45_g37" }} \
+  -mach userdefined \
+  -mpilib openmpi \
+  -compiler gnu

@@ -1,0 +1,29 @@
+#!/bin/sh
+
+# Set up a compute node.
+
+#
+# exit if LSF_ENVDIR is not set
+#
+if [ -z "$LSF_ENVDIR" ]; then
+    echo "LSF_ENVDIR is not set. Exiting..."
+    exit 1
+fi
+
+# source the lsf.conf file
+if [ ! -f "$LSF_ENVDIR/lsf.conf" ]; then
+    echo "$LSF_ENVDIR/lsf.conf not found. Exiting..."
+    exit 1
+fi
+
+. $LSF_ENVDIR/lsf.conf
+
+# install the openlava startup file
+cp $LSF_ENVDIR/openlava /etc/init.d
+
+cp $LSF_ENVDIR/openlava.sh /etc/profile.d
+cp $LSF_ENVDIR/openlava.csh /etc/profile.d
+
+# configure the lava service to start at boot
+/sbin/chkconfig --add openlava
+/sbin/chkconfig openlava on

@@ -1,0 +1,16 @@
+Begin   ClusterAdmins
+Administrators = root
+End    ClusterAdmins
+
+Begin   Host
+HOSTNAME                model		type	server  r1m RESOURCES
+cesmhost	!			!		1		-	-
+End     Host
+
+Begin ResourceMap
+RESOURCENAME  LOCATION
+# tmp2          [default]
+# nio           [all]
+# console       [default]
+End ResourceMap
+
