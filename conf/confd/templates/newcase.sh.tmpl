@@ -5,7 +5,7 @@ cd /var/cesm
 /cesm-1_2_2/scripts/create_newcase \
   -case case1 \
   -compset {{ getenv "COMPSET" }} \
-  -res {{ getv "GRID" "f45_g37" }} \
+  -res {{ getenv "GRID" }} \
   -mach userdefined \
   -mpilib openmpi \
   -compiler gnu
