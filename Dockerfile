@@ -15,7 +15,10 @@ RUN apt-get update && apt-get install -y \
     openmpi-bin \
     awscli \
 	libncurses5-dev \
-	tk8.5-dev
+	tk8.5-dev \
+	tcl \
+	psmisc \
+	autoconf
 
 # hdf5 - need to build from source
 # ADD http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz /
@@ -48,7 +51,6 @@ RUN wget -q https://github.com/kelseyhightower/confd/releases/download/v0.12.0-a
 RUN chmod u+x confd
 
 # openlava
-RUN apt-get install -y tcl psmisc autoconf
 RUN wget -q https://github.com/openlava/openlava/archive/3.3.2.tar.gz -O openlava-3.3.2.tar.gz
 RUN tar xzvf openlava-3.3.2.tar.gz
 RUN cd openlava-3.3.2 \
