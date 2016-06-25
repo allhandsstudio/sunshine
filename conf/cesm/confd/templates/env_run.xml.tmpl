@@ -252,7 +252,7 @@
 <entry id="BFBFLAG"   value="FALSE"  />
 
 <!--"level of debug output, 0=minimum, 1=normal, 2=more, 3=too much, valid values: 0,1,2,3 (integer) " -->
-<entry id="INFO_DBUG"   value="1"  />
+<entry id="INFO_DBUG"   value="2"  />
 
 <!--"timer output depth (integer) " -->
 <entry id="TIMER_LEVEL"   value="12"  />
@@ -289,7 +289,7 @@
 <!-- ====================================== -->
 
 <!--"command used to query batch system (char) " -->
-<entry id="BATCHQUERY"   value="USERDEFINED_optional_run"  />
+<entry id="BATCHQUERY"   value="bjobs -w"  />
 
 <!--"command used to submit to batch system (char) " -->
 <entry id="BATCHSUBMIT"   value="bsub"  />
@@ -380,7 +380,7 @@
 <entry id="GLC_NEC"   value="10"  />
 
 <!--"CO2 ppmv (real) " -->
-<entry id="CCSM_CO2_PPMV"   value="379.000"  />
+<entry id="CCSM_CO2_PPMV"   value={{getv "CCSM_CO2_PPMV" "\"379.000\""}}  />
 
 <!-- ====================================== -->
 

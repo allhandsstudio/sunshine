@@ -15,7 +15,7 @@
 ##PBS -S /bin/csh -V
 
 ##bsub -l nodes=1:ppn=8:walltime=00:59:00
-bsub -q normal -J case1 -W 00:59:00
+##bsub -q normal -J case1 
 ##bsub -k eo
 ##bsub -J case1
 ##bsub -W 00:59:00
@@ -199,8 +199,8 @@ setenv OMP_NUM_THREADS 1
 # edit job launching
 #===============================================================================
 
-#mpiexec -n 8 $EXEROOT/cesm.exe >&! cesm.log.$LID
-mpirun --allow-run-as-root -np 8 $EXEROOT/cesm.exe >&! cesm.log.$LID
+mpiexec --allow-run-as-root -n 32 $EXEROOT/cesm.exe >&! cesm.log.$LID
+#mpirun --allow-run-as-root -np 8 $EXEROOT/cesm.exe >&! cesm.log.$LID
 
 wait
 echo "`date` -- CSM EXECUTION HAS FINISHED"
