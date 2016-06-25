@@ -46,10 +46,6 @@ RUN cd netcdf-fortran-4.4.4 \
 # confd
 RUN wget -q https://github.com/kelseyhightower/confd/releases/download/v0.12.0-alpha3/confd-0.12.0-alpha3-linux-amd64 -O confd
 RUN chmod u+x confd
-ADD conf/confd /etc/confd
-ADD conf/cesm/confd /etc/cesm
-ADD conf/cesm/Macros /
-ADD conf/cesm/case1.run /
 
 # openlava
 RUN apt-get install -y tcl psmisc autoconf
@@ -70,5 +66,9 @@ RUN cp /opt/openlava/etc/openlava.* /etc/profile.d
 # cesm 1.2.2
 RUN git clone https://github.com/beaucronin/cesm-1_2_2.git  
 
+ADD conf/confd /etc/confd
+ADD conf/cesm/confd /etc/cesm
+ADD conf/cesm/Macros /
+ADD conf/cesm/case1.run /
 ADD scripts/boot.sh /
 CMD /boot.sh
