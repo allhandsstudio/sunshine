@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y \
 	tk8.5-dev \
 	tcl \
 	psmisc \
-	autoconf
+	autoconf \
+	libswitch-perl
 
 # hdf5 - need to build from source
 # ADD http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz /
