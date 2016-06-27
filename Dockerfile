@@ -19,7 +19,8 @@ RUN apt-get update && apt-get install -y \
 	tcl \
 	psmisc \
 	autoconf \
-	libswitch-perl
+	libswitch-perl \
+	vim
 
 # hdf5 - need to build from source
 # ADD http://www.hdfgroup.org/ftp/HDF5/current/src/hdf5-1.8.17.tar.gz /
