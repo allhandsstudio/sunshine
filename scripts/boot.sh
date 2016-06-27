@@ -40,6 +40,7 @@ service openlava start
 chmod +x case1.run
 ln -s /usr/libnetcdff.so.6 /usr/lib/libnetcdff.so.6
 ln -s /usr/libnetcdf.so.11 /usr/lib/libnetcdf.so.11
+ulimit -s unlimited
 # ./case1.run
 
 # ---------------------------------------------
