@@ -1,3 +1,0 @@
-[template]
-src = "env_mach_pes.xml.tmpl"
-dest = "/var/cesm/case1/env_mach_pes.xml"

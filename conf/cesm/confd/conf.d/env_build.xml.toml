@@ -1,3 +1,0 @@
-[template]
-src = "env_build.xml.tmpl"
-dest = "/var/cesm/case1/env_build.xml"
