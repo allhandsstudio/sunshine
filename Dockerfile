@@ -71,8 +71,5 @@ RUN cp /opt/openlava/etc/openlava.* /etc/profile.d
 RUN git clone https://github.com/beaucronin/cesm-1_2_2.git  
 
 ADD conf/confd /etc/confd
-ADD conf/cesm/confd /etc/cesm
-ADD conf/cesm/Macros /
-ADD conf/cesm/case1.run /
 ADD scripts/boot.sh /
 CMD /boot.sh
