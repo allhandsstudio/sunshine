@@ -8,4 +8,5 @@ cd /var/cesm
   -res {{ getenv "GRID" }} \
   -mach sunshine \
   -mpilib openmpi \
-  -compiler gnu
+  -compiler gnu \
+  -confopts -pes_file sunshine32_pes.xml
