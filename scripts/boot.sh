@@ -33,7 +33,10 @@ service openlava start
 ln -s /usr/libnetcdff.so.6 /usr/lib/libnetcdff.so.6
 ln -s /usr/libnetcdf.so.11 /usr/lib/libnetcdf.so.11
 ulimit -s unlimited
-# ./case1.run
+aws s3 cp \
+  s3://cesm-input-data/inputdata/ice/cice/iced.0001-01-01.gx1v6_20080212 \
+  /var/cesm/inputdata/ice/cice/iced.0001-01-01.gx1v6_20080212
+./case1.run
 
 # ---------------------------------------------
 # save results to s3
