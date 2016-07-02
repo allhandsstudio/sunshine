@@ -1,0 +1,3 @@
+[template]
+src = "sunshine_c4.4xlarge_pes.xml.tmpl"
+dest = "/sunshine_c4.4xlarge_pes.xml"
