@@ -1,0 +1,93 @@
+#!/bin/bash
+
+OPTIND=1
+
+# -----------------------------
+# Defaults
+# -----------------------------
+instance_type="c4.2xlarge"
+cesm_vars_file="cesm_vars"
+ami="ami-42569022" 
+volume_size=50
+key_name="UNSET"
+subnet="UNSET"
+dry_run="--no-dry-run"
+region="us-west-2"
+availability_zone="us-west-2b"
+
+function show_help {
+	echo "launch"
+	echo ""
+	echo "  Creates a new EC2 instance and executes a CESM run"
+	echo ""
+	echo "  -a <availability zone> Which AZ to use                        [default $availability_zone]"
+	echo "  -d                     Perform a dry run                      [default no]"
+	echo "  -f <cesm vars file>    File containing CESM variable settings "
+	echo "  -k <keypair name>      The keypair to use                     [required]"
+	echo "  -n <subnet id>         The subnet to use                      [required]"
+	echo "  -r <region>            The AWS region                         [default $region]"
+	echo "  -s <volume size>       Size of the EBS volume to create       [default $volume_size]"
+	echo "  -t <instance type>     c4.{2,4,8}xlarge                       [default $instance_type]"
+}
+
+# -----------------------------
+# Process Arguments
+# -----------------------------
+while getopts "ha:dk:t:f:n:" opt; do
+	case "$opt" in
+		h)
+			show_help
+			exit 0
+			;;
+		a)	availability_zone=$OPTARG
+			;;
+		d) 	dry_run="--dry-run"
+			;;
+		f)	cesm_vars_file=$OPTARG
+			;;
+		k)	key_name=$OPTARG
+			;;
+		n)	subnet=$OPTARG
+			;;
+		r)	region=$OPTARG
+			;;
+		s)	volume_size=$OPTARG
+			;;
+		t)	instance_type=$OPTARG
+			;;
+	esac
+done
+
+if [ "$key_name" = "UNSET" ]
+then
+	echo "launch: key name must be specified with -k"
+	exit 1
+fi
+
+if [ "$subnet" = "UNSET" ]
+then
+	echo "launch: subnet must be specified with -n"
+	exit 1
+fi
+
+# -----------------------------
+# Launch Instance
+# -----------------------------
+echo "Launching $instance_type instance"
+aws ec2 run-instances \
+	$dry_run \
+	--image-id $ami \
+	--instance-type $instance_type \
+	--key-name $key_name \
+	--subnet-id $subnet \
+	--placement AvailabilityZone=$availability_zone \
+	--block-device-mappings \
+		"{ \
+			\"DeviceName\":\"/dev/sda1\", \
+			\"Ebs\":{\
+				\"DeleteOnTermination\":true, \
+				\"SnapshotId\":\"snap-cdd16037\", \
+				\"VolumeSize\":$volume_size, \
+				\"VolumeType\":\"gp2\"}}" \
+	--user-data file://scripts/startup.sh
+
