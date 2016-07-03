@@ -74,7 +74,7 @@ fi
 # Launch Instance
 # -----------------------------
 echo "Launching $instance_type instance"
-aws ec2 run-instances \
+if aws ec2 run-instances \
 	$dry_run \
 	--image-id $ami \
 	--instance-type $instance_type \
@@ -89,5 +89,26 @@ aws ec2 run-instances \
 				\"SnapshotId\":\"snap-cdd16037\", \
 				\"VolumeSize\":$volume_size, \
 				\"VolumeType\":\"gp2\"}}" \
-	--user-data file://scripts/startup.sh
+	--user-data file://scripts/cloud-init.sh > instance_info.json
+then
+	instance_id=`jq .Instances[0].InstanceId instance_info.json`
+	echo "InstanceId $instance_id"
+	aws dynamodb put-item \
+		--table-name CESM_Instances \
+		--item \
+			"{ \
+				\"InstanceId\":       { \"S\": $instance_id }, \
+				\"State\":            { \"S\": \"STARTED\" }, \
+				\"InstanceType\":     { \"S\": \"$instance_type\" }, \
+				\"KeyName\":          { \"S\": \"$key_name\" }, \
+				\"AMI\":              { \"S\": \"$ami\" }, \
+				\"SubnetId\":         { \"S\": \"$subnet\" }, \
+				\"VolumeSize\":       { \"N\": \"$volume_size\" }, \
+				\"Region\":           { \"S\": \"$region\" }, \
+				\"AvailabilityZone\": { \"S\": \"$availability_zone\" } \
+			}"
+else
+	echo "Could not create instance; exiting"
+	exit 1
+fi
 
