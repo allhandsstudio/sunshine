@@ -9,4 +9,4 @@ cd /var/cesm
   -mach sunshine \
   -mpilib openmpi \
   -compiler gnu \
-  -pes_file /sunshine_c4.2xlarge_pes.xml
+  -pes_file /sunshine_{{ getenv "INSTANCE_TYPE" }}_pes.xml
