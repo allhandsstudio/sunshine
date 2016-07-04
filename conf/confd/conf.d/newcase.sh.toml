@@ -1,3 +1,0 @@
-[template]
-src = "newcase.sh.tmpl"
-dest = "/newcase.sh"

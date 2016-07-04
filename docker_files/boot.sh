@@ -2,15 +2,11 @@
 #set -e
 
 # ---------------------------------------------
-# fill in generic config variables
-# ---------------------------------------------
-./confd -onetime -backend env
-
-# ---------------------------------------------
 # create and configure case
 # ---------------------------------------------
 
 # create the case template
+python3 create_newcase.py
 chmod a+x ./newcase.sh
 ./newcase.sh
 
@@ -24,6 +20,11 @@ mkdir /var/cesm/inputdata
 # ---------------------------------------------
 ln -s /usr/bin/make /usr/bin/gmake
 ./case1.build
+
+# ---------------------------------------------
+# set user-specified run variables
+# ---------------------------------------------
+python3 set_user_vars.py
 
 # ---------------------------------------------
 # start openalava and run case
@@ -42,9 +43,5 @@ aws s3 cp \
   /var/cesm/inputdata/ice/cice/iced.0001-01-01.gx3v7_20080212
 
 ./case1.run
-
-# ---------------------------------------------
-# save results to s3
-# ---------------------------------------------
 
 /bin/bash

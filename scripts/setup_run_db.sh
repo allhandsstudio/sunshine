@@ -35,9 +35,6 @@ aws dynamodb create-table \
 	--attribute-definitions \
 		AttributeName=RunId,AttributeType=S \
 		AttributeName=CreatedTime,AttributeType=S \
-		AttributeName=Compset,AttributeType=S \
-		AttributeName=Grid,AttributeType=S \
-		AttributeName=S3Prefix,AttributeType=S
 
 echo "Creating table $instance_table_name"
 aws dynamodb create-table \
@@ -47,11 +44,3 @@ aws dynamodb create-table \
 		AttributeName=InstanceId,KeyType=HASH \
 	--attribute-definitions \
 		AttributeName=InstanceId,AttributeType=S \
-		# AttributeName=State,AttributeType=S \
-		# AttributeName=InstanceType,AttributeType=S \
-		# AttributeName=PublicIP,AttributeType=S \
-		# AttributeName=KeyName,AttributeType=S \
-		# AttributeName=AMI,AttributeType=S \
-		# AttributeName=VolumeSize,AttributeType=N \
-		# AttributeName=Region,AttributeType=S \
-		# AttributeName=AvailabilityZone,AttributeType=S 

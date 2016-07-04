@@ -1,0 +1,14 @@
+EOF
+
+#--------------------------------------
+# Build and run docker image
+#--------------------------------------
+
+cd /root
+git clone https://github.com/beaucronin/sunshine.git
+cd sunshine
+mv /cesm_vars.toml .
+docker build -t beaucronin/sunshine:latest .
+docker run -it sunshine:latest \
+  -h cesmhost
+

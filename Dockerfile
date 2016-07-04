@@ -72,5 +72,6 @@ RUN cp /opt/openlava/etc/openlava.* /etc/profile.d
 RUN git clone https://github.com/beaucronin/cesm-1_2_2.git  
 
 ADD conf/confd /etc/confd
-ADD scripts/boot.sh /
+ADD docker_files/* /
+ADD cesm_vars.toml /
 CMD /boot.sh

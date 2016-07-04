@@ -6,7 +6,7 @@ OPTIND=1
 # Defaults
 # -----------------------------
 instance_type="c4.2xlarge"
-cesm_vars_file="cesm_vars"
+cesm_vars_file="cesm_vars.toml"
 ami="ami-42569022" 
 volume_size=50
 key_name="UNSET"
@@ -70,6 +70,14 @@ then
 	exit 1
 fi
 
+
+# -----------------------------
+# Compose user data file
+# -----------------------------
+cat scripts/cloud-init-pre > user-data.sh
+cat $cesm_vars_file >> user-data.sh
+cat scripts/cloud-init-post >> user-data.sh
+
 # -----------------------------
 # Launch Instance
 # -----------------------------
@@ -88,8 +96,9 @@ if aws ec2 run-instances \
 				\"DeleteOnTermination\":true, \
 				\"SnapshotId\":\"snap-cdd16037\", \
 				\"VolumeSize\":$volume_size, \
-				\"VolumeType\":\"gp2\"}}" \
-	--user-data file://scripts/cloud-init.sh > instance_info.json
+				\"VolumeType\":\"gp2\"}
+		}" \
+	--user-data file://user-data.sh > instance_info.json
 then
 	instance_id=`jq .Instances[0].InstanceId instance_info.json`
 	echo "InstanceId $instance_id"
@@ -107,6 +116,7 @@ then
 				\"Region\":           { \"S\": \"$region\" }, \
 				\"AvailabilityZone\": { \"S\": \"$availability_zone\" } \
 			}"
+	rm instance_info.json
 else
 	echo "Could not create instance; exiting"
 	exit 1
