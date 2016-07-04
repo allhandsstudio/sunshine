@@ -25,5 +25,5 @@ cd /var/cesm
   -pes_file /sunshine_"$instance_type"_pes.xml
 """.format(compset, grid)
 
-with open('/newcase.sh', 'wb') as fd:
+with open('/newcase.sh', 'w') as fd:
     fd.write(newcase_text)
