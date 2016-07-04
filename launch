@@ -23,8 +23,8 @@ function show_help {
 	echo "  -a <availability zone> Which AZ to use                        [default $availability_zone]"
 	echo "  -d                     Perform a dry run                      [default no]"
 	echo "  -f <cesm vars file>    File containing CESM variable settings "
-	echo "  -k <keypair name>      The keypair to use                     [required]"
-	echo "  -n <subnet id>         The subnet to use                      [required]"
+	echo "  -k <keypair name>      The AWS keypair to use on the instance [required]"
+	echo "  -n <subnet id>         The subnet to place the instance in    [required]"
 	echo "  -r <region>            The AWS region                         [default $region]"
 	echo "  -s <volume size>       Size of the EBS volume to create       [default $volume_size]"
 	echo "  -t <instance type>     c4.{2,4,8}xlarge                       [default $instance_type]"
@@ -89,6 +89,7 @@ if aws ec2 run-instances \
 	--key-name $key_name \
 	--subnet-id $subnet \
 	--placement AvailabilityZone=$availability_zone \
+	--iam-instance-profile Name="S3-Permissions"
 	--block-device-mappings \
 		"{ \
 			\"DeviceName\":\"/dev/sda1\", \

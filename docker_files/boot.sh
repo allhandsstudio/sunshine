@@ -15,16 +15,15 @@ cd /var/cesm/case1
 mkdir /var/cesm/inputdata
 ./cesm_setup
 
+# set user-specified run variables
+mv /set_user_vars.py .
+python3 set_user_vars.py
+
 # ---------------------------------------------
 # build case
 # ---------------------------------------------
 ln -s /usr/bin/make /usr/bin/gmake
 ./case1.build
-
-# ---------------------------------------------
-# set user-specified run variables
-# ---------------------------------------------
-python3 set_user_vars.py
 
 # ---------------------------------------------
 # start openalava and run case
