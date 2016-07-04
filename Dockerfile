@@ -21,6 +21,7 @@ RUN apt-get update && apt-get install -y \
 	autoconf \
 	libswitch-perl \
 	vim \
+	python3-pip \
 	nco
 
 # hdf5 - need to build from source
@@ -71,6 +72,7 @@ RUN cp /opt/openlava/etc/openlava.* /etc/profile.d
 # cesm 1.2.2
 RUN git clone https://github.com/beaucronin/cesm-1_2_2.git  
 
+RUN pip3 install toml
 ADD docker_files/* /
 ADD cesm_vars.toml /
 CMD /boot.sh
