@@ -9,9 +9,9 @@ grid = main_vars['GRID']
 newcase_text = """
 #!/bin/bash
 
-wget http://169.254.169.254/latest/meta-data/instance-type -q
+wget http://169.254.169.254/latest/meta-data/instance-type -q -O instance-type
 instance_type=`cat instance-type`
-rm instance_type
+rm instance-type
 
 mkdir -p /var/cesm
 cd /var/cesm
