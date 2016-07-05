@@ -7,6 +7,7 @@
 # -----------------------------------------------------------------------------
 
 run_table_name="CESM_Runs"
+run_update_table_name="CESM_Run_Updates"
 instance_table_name="CESM_Instances"
 
 echo "Checking for existing table $run_table_name"
@@ -30,11 +31,22 @@ aws dynamodb create-table \
 	--table-name $run_table_name \
 	--provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
 	--key-schema \
-		AttributeName=RunId,KeyType=HASH \
+		AttributeName=InstanceId,KeyType=HASH \
 		AttributeName=CreatedTime,KeyType=RANGE \
 	--attribute-definitions \
-		AttributeName=RunId,AttributeType=S \
-		AttributeName=CreatedTime,AttributeType=S \
+		AttributeName=InstanceId,AttributeType=S \
+		AttributeName=CreatedTime,AttributeType=S 
+
+echo "Creating table $run_update_table_name"
+aws dynamodb create-table \
+	--table-name $run_update_table_name \
+	--provisioned-throughput ReadCapacityUnits=1,WriteCapacityUnits=1 \
+	--key-schema \
+		AttributeName=InstanceId,KeyType=HASH \
+		AttributeName=CreatedTime,KeyType=RANGE \
+	--attribute-definitions \
+		AttributeName=InstanceId,AttributeType=S \
+		AttributeName=CreatedTime,AttributeType=S 
 
 echo "Creating table $instance_table_name"
 aws dynamodb create-table \
