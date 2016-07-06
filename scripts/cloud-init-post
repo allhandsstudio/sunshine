@@ -9,5 +9,5 @@ git clone https://github.com/beaucronin/sunshine.git
 cd sunshine
 mv /cesm_vars.toml .
 docker build -t beaucronin/sunshine:latest .
-docker run -h cesmhost beaucronin/sunshine:latest
+docker run -d -h cesmhost beaucronin/sunshine:latest
 
