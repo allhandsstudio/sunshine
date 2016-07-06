@@ -89,7 +89,7 @@ if aws ec2 run-instances \
 	--key-name $key_name \
 	--subnet-id $subnet \
 	--placement AvailabilityZone=$availability_zone \
-	--iam-instance-profile Name="S3-Permissions" \
+	--iam-instance-profile Name="Sunshine-Executor" \
 	--block-device-mappings \
 		"{ \
 			\"DeviceName\":\"/dev/sda1\", \
