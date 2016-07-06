@@ -41,6 +41,6 @@ aws s3 cp \
   s3://cesm-input-data/inputdata/ice/cice/iced.0001-01-01.gx3v7_20080212 \
   /var/cesm/inputdata/ice/cice/iced.0001-01-01.gx3v7_20080212
 
-# ./case1.run
+./case1.run
 
 /bin/bash
