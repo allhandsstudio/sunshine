@@ -13,7 +13,7 @@ stop on runlevel [!2345]
 respawn
 
 script
-	/usr/bin/docker run -d -h cesmhost -v /root/cesm:/var/cesm beaucronin/sunshine:latest
+	/usr/bin/docker run -h cesmhost -v /root/cesm:/var/cesm beaucronin/sunshine:latest
 end script
 
 EOF
