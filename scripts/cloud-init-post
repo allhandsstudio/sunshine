@@ -12,11 +12,7 @@ start on filesystem and started docker
 stop on runlevel [!2345]
 respawn
 pre-start script
-	cd /root
-	mkdir cesm
-	git clone https://github.com/beaucronin/sunshine.git
-	cd sunshine
-	mv /cesm_vars.toml .
+	cd /root/sunshine
 	/usr/bin/docker build -t beaucronin/sunshine:latest .
 end script
 
@@ -25,5 +21,10 @@ script
 end script
 
 EOF
+
+cd /root
+mkdir -p cesm
+git clone https://github.com/beaucronin/sunshine.git
+mv /cesm_vars.toml .
 
 service sunshine start
