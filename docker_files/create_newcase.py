@@ -13,7 +13,7 @@ wget http://169.254.169.254/latest/meta-data/instance-type -q -O instance-type
 instance_type=`cat instance-type`
 rm instance-type
 
-mkdir -p /var/cesm
+#mkdir -p /var/cesm
 cd /var/cesm
 /cesm-1_2_2/scripts/create_newcase \
   -case case1 \
