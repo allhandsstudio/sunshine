@@ -25,3 +25,4 @@ end script
 
 EOF
 
+service sunshine start
