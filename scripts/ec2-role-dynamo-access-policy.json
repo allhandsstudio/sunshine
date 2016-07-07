@@ -4,7 +4,7 @@
     {
       "Effect": "Allow",
       "Action": ["dynamodb:*"],
-      "Resource": ["arn:aws:dynamodb:::table/CESM_*"]
+      "Resource": ["arn:aws:dynamodb:us-west-2:811920840952:table/*"]
     }
   ]
 }
