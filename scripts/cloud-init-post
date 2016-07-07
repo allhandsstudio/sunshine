@@ -1,13 +1,27 @@
 EOF
 
 #--------------------------------------
-# Build and run docker image
+# Write docker upstart file
 #--------------------------------------
 
-cd /root
-git clone https://github.com/beaucronin/sunshine.git
-cd sunshine
-mv /cesm_vars.toml .
-docker build -t beaucronin/sunshine:latest .
-docker run -d -h cesmhost beaucronin/sunshine:latest
+upstart_file=/etc/init/sunshine.conf
+cat <<EOF >$upstart_file
+description "Sunshine container"
+author "Me"
+start on filesystem and started docker
+stop on runlevel [!2345]
+respawn
+pre-start script
+	cd /root
+	git clone https://github.com/beaucronin/sunshine.git
+	cd sunshine
+	mv /cesm_vars.toml .
+	/usr/bin/docker build -t beaucronin/sunshine:latest .
+end script
+
+script
+	/usr/bin/docker run -d -h cesmhost beaucronin/sunshine:latest
+end script
+
+EOF
 
