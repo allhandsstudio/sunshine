@@ -1,0 +1,2242 @@
+{
+  "OCDEP": {
+    "name": "OCDEP",
+    "size": 3312,
+    "units": "kg/m^2/s",
+    "datatype": "float32",
+    "long_name": "total OC deposition (dry+wet) from atmosphere",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDSNDLN": {
+    "name": "FSDSNDLN",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct nir incident solar radiation at local noon",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSAI": {
+    "name": "TSAI",
+    "size": 3312,
+    "units": "none",
+    "datatype": "float32",
+    "long_name": "total projected stem area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOOCMCL": {
+    "name": "SNOOCMCL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of OC in snow column",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TREFMXAV_U": {
+    "name": "TREFMXAV_U",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Urban daily maximum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FGR_U": {
+    "name": "FGR_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban heat flux into soil/snow including snow melt",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "lon": {
+    "name": "lon",
+    "size": 72,
+    "units": "degrees_east",
+    "datatype": "float32",
+    "long_name": "coordinate longitude",
+    "shape": [
+      72
+    ],
+    "mask": true
+  },
+  "FIRA_U": {
+    "name": "FIRA_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban net infrared (longwave) radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QOVER": {
+    "name": "QOVER",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "surface runoff",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "EFLX_DYNBAL": {
+    "name": "EFLX_DYNBAL",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "dynamic land cover change conversion energy flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QCHARGE": {
+    "name": "QCHARGE",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "aquifer recharge rate (vegetated landunits only)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TREFMNAV_U": {
+    "name": "TREFMNAV_U",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Urban daily minimum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRNI": {
+    "name": "FSRNI",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "diffuse nir reflected solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TREFMXAV": {
+    "name": "TREFMXAV",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "daily maximum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ERRSEB": {
+    "name": "ERRSEB",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "surface energy conservation error",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRND": {
+    "name": "FSRND",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct nir reflected solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "pftmask": {
+    "name": "pftmask",
+    "size": 3312,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "pft real/fake mask (0.=fake and 1.=real)",
+    "shape": [
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SoilAlpha_U": {
+    "name": "SoilAlpha_U",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "urban factor limiting ground evap",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ELAI": {
+    "name": "ELAI",
+    "size": 3312,
+    "units": "m^2/m^2",
+    "datatype": "float32",
+    "long_name": "exposed one-sided leaf area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDS": {
+    "name": "FSDS",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "atmospheric incident solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "RH2M_R": {
+    "name": "RH2M_R",
+    "size": 3312,
+    "units": "%",
+    "datatype": "float32",
+    "long_name": "Rural 2m specific humidity",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRNDLN": {
+    "name": "FSRNDLN",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct nir reflected solar radiation at local noon",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "mcsec": {
+    "name": "mcsec",
+    "size": 1,
+    "units": "s",
+    "datatype": "int32",
+    "long_name": "current seconds of current date",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "SNOWLIQ": {
+    "name": "SNOWLIQ",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "snow liquid water",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QINTR": {
+    "name": "QINTR",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "interception",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "PBOT": {
+    "name": "PBOT",
+    "size": 3312,
+    "units": "Pa",
+    "datatype": "float32",
+    "long_name": "atmospheric pressure",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ERRH2OSNO": {
+    "name": "ERRH2OSNO",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "imbalance in snow depth (liquid water)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "GC_HEAT1": {
+    "name": "GC_HEAT1",
+    "size": 3312,
+    "units": "J/m^2",
+    "datatype": "float32",
+    "long_name": "initial gridcell total heat content",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "LAISHA": {
+    "name": "LAISHA",
+    "size": 3312,
+    "units": "none",
+    "datatype": "float32",
+    "long_name": "shaded projected leaf area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "BCDEP": {
+    "name": "BCDEP",
+    "size": 3312,
+    "units": "kg/m^2/s",
+    "datatype": "float32",
+    "long_name": "total BC deposition (dry+wet) from atmosphere",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FIRA": {
+    "name": "FIRA",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "net infrared (longwave) radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QDRAI": {
+    "name": "QDRAI",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "sub-surface drainage",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "WASTEHEAT": {
+    "name": "WASTEHEAT",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat flux from heating/cooling sources of urban waste heat",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSNO": {
+    "name": "FSNO",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "fraction of ground covered by snow",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ERRH2O": {
+    "name": "ERRH2O",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "total water conservation error",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "H2OSOI": {
+    "name": "H2OSOI",
+    "size": 49680,
+    "units": "mm3/mm3",
+    "datatype": "float32",
+    "long_name": "volumetric soil water (vegetated landunits only)",
+    "shape": [
+      1,
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSA_U": {
+    "name": "FSA_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban absorbed solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "LAISUN": {
+    "name": "LAISUN",
+    "size": 3312,
+    "units": "none",
+    "datatype": "float32",
+    "long_name": "sunlit projected leaf area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "WATSAT": {
+    "name": "WATSAT",
+    "size": 49680,
+    "units": "mm3/mm3",
+    "datatype": "float32",
+    "long_name": "saturated soil water content (porosity)",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSA_R": {
+    "name": "FSA_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural absorbed solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QRUNOFF_U": {
+    "name": "QRUNOFF_U",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "Urban total runoff",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "H2OSNO_TOP": {
+    "name": "H2OSNO_TOP",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of snow in top snow layer",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "DSTFLXT": {
+    "name": "DSTFLXT",
+    "size": 3312,
+    "units": "kg/m2/s",
+    "datatype": "float32",
+    "long_name": "total surface dust emission",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "EFLX_LH_TOT_U": {
+    "name": "EFLX_LH_TOT_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban total evaporation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "time": {
+    "name": "time",
+    "size": 1,
+    "units": "days since 2000-01-01 00:00:00",
+    "datatype": "float32",
+    "long_name": "time",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "SNOWICE": {
+    "name": "SNOWICE",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "snow ice",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FIRE": {
+    "name": "FIRE",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "emitted infrared (longwave) radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "lat": {
+    "name": "lat",
+    "size": 46,
+    "units": "degrees_north",
+    "datatype": "float32",
+    "long_name": "coordinate latitude",
+    "shape": [
+      46
+    ],
+    "mask": true
+  },
+  "FLDS": {
+    "name": "FLDS",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "atmospheric longwave radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "time_bounds": {
+    "name": "time_bounds",
+    "size": 2,
+    "units": "none",
+    "datatype": "float64",
+    "long_name": "history time interval endpoints",
+    "shape": [
+      1,
+      2
+    ],
+    "mask": true
+  },
+  "QSNWCPICE": {
+    "name": "QSNWCPICE",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "excess snowfall due to snow capping",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "HC": {
+    "name": "HC",
+    "size": 3312,
+    "units": "MJ/m2",
+    "datatype": "float32",
+    "long_name": "heat content of soil/snow/lake",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH_V": {
+    "name": "FSH_V",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat from veg",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDSVI": {
+    "name": "FSDSVI",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "diffuse vis incident solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "EFLX_LH_TOT_R": {
+    "name": "EFLX_LH_TOT_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural total evaporation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "H2OCAN": {
+    "name": "H2OCAN",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "intercepted water",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "HCSOI": {
+    "name": "HCSOI",
+    "size": 3312,
+    "units": "MJ/m2",
+    "datatype": "float32",
+    "long_name": "soil heat content",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSM": {
+    "name": "FSM",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "snow melt heat flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SOILWATER_10CM": {
+    "name": "SOILWATER_10CM",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "soil liquid water + ice in top 10cm of soil (veg landunits only)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FGR12": {
+    "name": "FGR12",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "heat flux between soil layers 1 and 2",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ZWT": {
+    "name": "ZWT",
+    "size": 3312,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "water table depth (vegetated landunits only)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SOILLIQ": {
+    "name": "SOILLIQ",
+    "size": 49680,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "soil liquid water (vegetated landunits only)",
+    "shape": [
+      1,
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QDRIP": {
+    "name": "QDRIP",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "throughfall",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "mcdate": {
+    "name": "mcdate",
+    "size": 1,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "current date (YYYYMMDD)",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "TREFMNAV_R": {
+    "name": "TREFMNAV_R",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Rural daily minimum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSR": {
+    "name": "FSR",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "reflected solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QRUNOFF_NODYNLNDUSE": {
+    "name": "QRUNOFF_NODYNLNDUSE",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "total liquid runoff (does not include QSNWCPICE) not including correction for land use change",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSOI_ICE": {
+    "name": "TSOI_ICE",
+    "size": 49680,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "soil temperature (ice landunits only)",
+    "shape": [
+      1,
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TG_U": {
+    "name": "TG_U",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Urban ground temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TREFMXAV_R": {
+    "name": "TREFMXAV_R",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Rural daily maximum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TREFMNAV": {
+    "name": "TREFMNAV",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "daily minimum of average 2-m temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QIRRIG": {
+    "name": "QIRRIG",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "water added through irrigation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "WIND": {
+    "name": "WIND",
+    "size": 3312,
+    "units": "m/s",
+    "datatype": "float32",
+    "long_name": "atmospheric wind velocity magnitude",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TV": {
+    "name": "TV",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "vegetation temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TG_R": {
+    "name": "TG_R",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Rural ground temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSA": {
+    "name": "TSA",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "2m air temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "PCO2": {
+    "name": "PCO2",
+    "size": 3312,
+    "units": "Pa",
+    "datatype": "float32",
+    "long_name": "atmospheric partial pressure of CO2",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSOI": {
+    "name": "TSOI",
+    "size": 49680,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "soil temperature (vegetated landunits only)",
+    "shape": [
+      1,
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FCOV": {
+    "name": "FCOV",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "fractional impermeable area",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "date_written": {
+    "name": "date_written",
+    "size": 8,
+    "units": "none",
+    "datatype": "|S1",
+    "long_name": "none",
+    "shape": [
+      1,
+      8
+    ],
+    "mask": true
+  },
+  "SNOW_SOURCES": {
+    "name": "SNOW_SOURCES",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "snow sources (liquid water)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "RH2M_U": {
+    "name": "RH2M_U",
+    "size": 3312,
+    "units": "%",
+    "datatype": "float32",
+    "long_name": "Urban 2m relative humidity",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FGEV": {
+    "name": "FGEV",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "ground evaporation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QRGWL": {
+    "name": "QRGWL",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "surface runoff at glaciers (liquid only), wetlands, lakes",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "topo": {
+    "name": "topo",
+    "size": 3312,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "grid cell topography",
+    "shape": [
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QVEGE": {
+    "name": "QVEGE",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "canopy evaporation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRVDLN": {
+    "name": "FSRVDLN",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct vis reflected solar radiation at local noon",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSA": {
+    "name": "FSA",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "absorbed solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FIRA_R": {
+    "name": "FIRA_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural net infrared (longwave) radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "H2OSNO": {
+    "name": "H2OSNO",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "snow depth (liquid water)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH": {
+    "name": "FSH",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSA_U": {
+    "name": "TSA_U",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Urban 2m air temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "levlak": {
+    "name": "levlak",
+    "size": 10,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "coordinate lake levels",
+    "shape": [
+      10
+    ],
+    "mask": true
+  },
+  "TAUX": {
+    "name": "TAUX",
+    "size": 3312,
+    "units": "kg/m/s^2",
+    "datatype": "float32",
+    "long_name": "zonal surface stress",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SUCSAT": {
+    "name": "SUCSAT",
+    "size": 49680,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "saturated soil matric potential",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "THBOT": {
+    "name": "THBOT",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "atmospheric air potential temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOW_SINKS": {
+    "name": "SNOW_SINKS",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "snow sinks (liquid water)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FPSN": {
+    "name": "FPSN",
+    "size": 3312,
+    "units": "umol/m2s",
+    "datatype": "float32",
+    "long_name": "photosynthesis",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOBCMCL": {
+    "name": "SNOBCMCL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of BC in snow column",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TG": {
+    "name": "TG",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "ground temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSM_R": {
+    "name": "FSM_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural snow melt heat flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH_R": {
+    "name": "FSH_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural sensible heat",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QVEGT": {
+    "name": "QVEGT",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "canopy transpiration",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QINFL": {
+    "name": "QINFL",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "infiltration",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDSNI": {
+    "name": "FSDSNI",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "diffuse nir incident solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "WA": {
+    "name": "WA",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "water in the unconfined aquifer (vegetated landunits only)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SOILICE": {
+    "name": "SOILICE",
+    "size": 49680,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "soil ice (vegetated landunits only)",
+    "shape": [
+      1,
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSM_U": {
+    "name": "FSM_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban snow melt heat flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "U10": {
+    "name": "U10",
+    "size": 3312,
+    "units": "m/s",
+    "datatype": "float32",
+    "long_name": "10-m wind",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QRUNOFF": {
+    "name": "QRUNOFF",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "total liquid runoff (does not include QSNWCPICE)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRVD": {
+    "name": "FSRVD",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct vis reflected solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH_NODYNLNDUSE": {
+    "name": "FSH_NODYNLNDUSE",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat not including correction for land use change",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOWDP": {
+    "name": "SNOWDP",
+    "size": 3312,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "snow height",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "WT": {
+    "name": "WT",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "total water storage (unsaturated soil water + groundwater, veg landunits)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "BUILDHEAT": {
+    "name": "BUILDHEAT",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "heat flux from urban building interior to walls and roof",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "GC_ICE1": {
+    "name": "GC_ICE1",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "initial gridcell total ice content",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FGR_R": {
+    "name": "FGR_R",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Rural heat flux into soil/snow including snow melt",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QBOT": {
+    "name": "QBOT",
+    "size": 3312,
+    "units": "kg/kg",
+    "datatype": "float32",
+    "long_name": "atmospheric specific humidity",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "RAIN": {
+    "name": "RAIN",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "atmospheric rain",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "area": {
+    "name": "area",
+    "size": 3312,
+    "units": "km^2",
+    "datatype": "float32",
+    "long_name": "grid cell areas",
+    "shape": [
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ZBOT": {
+    "name": "ZBOT",
+    "size": 3312,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "atmospheric reference height",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "landfrac": {
+    "name": "landfrac",
+    "size": 3312,
+    "units": "none",
+    "datatype": "float32",
+    "long_name": "land fraction",
+    "shape": [
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TLAI": {
+    "name": "TLAI",
+    "size": 3312,
+    "units": "none",
+    "datatype": "float32",
+    "long_name": "total projected leaf area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOBCMSL": {
+    "name": "SNOBCMSL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of BC in top snow layer",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "time_written": {
+    "name": "time_written",
+    "size": 8,
+    "units": "none",
+    "datatype": "|S1",
+    "long_name": "none",
+    "shape": [
+      1,
+      8
+    ],
+    "mask": true
+  },
+  "mdcur": {
+    "name": "mdcur",
+    "size": 1,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "current day (from base day)",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "ESAI": {
+    "name": "ESAI",
+    "size": 3312,
+    "units": "m^2/m^2",
+    "datatype": "float32",
+    "long_name": "exposed one-sided stem area index",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH_U": {
+    "name": "FSH_U",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "Urban sensible heat",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSA_R": {
+    "name": "TSA_R",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "Rural 2m air temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TBOT": {
+    "name": "TBOT",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "atmospheric air temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "nstep": {
+    "name": "nstep",
+    "size": 1,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "time step",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "TAUY": {
+    "name": "TAUY",
+    "size": 3312,
+    "units": "kg/m/s^2",
+    "datatype": "float32",
+    "long_name": "meridional surface stress",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ZSOI": {
+    "name": "ZSOI",
+    "size": 49680,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "soil depth",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QFLX_ICE_DYNBAL": {
+    "name": "QFLX_ICE_DYNBAL",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "ice dynamic land cover change conversion runoff flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "BSW": {
+    "name": "BSW",
+    "size": 49680,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "slope of soil water retention curve",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QRUNOFF_R": {
+    "name": "QRUNOFF_R",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "Rural total runoff",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "Q2M": {
+    "name": "Q2M",
+    "size": 3312,
+    "units": "kg/kg",
+    "datatype": "float32",
+    "long_name": "2m specific humidity",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SABV": {
+    "name": "SABV",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "solar rad absorbed by veg",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNODSTMSL": {
+    "name": "SNODSTMSL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of dust in top snow layer",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDSND": {
+    "name": "FSDSND",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct nir incident solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSRVI": {
+    "name": "FSRVI",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "diffuse vis reflected solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FCEV": {
+    "name": "FCEV",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "canopy evaporation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNODSTMCL": {
+    "name": "SNODSTMCL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of dust in snow column",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "HKSAT": {
+    "name": "HKSAT",
+    "size": 49680,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "saturated hydraulic conductivity",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "levgrnd": {
+    "name": "levgrnd",
+    "size": 15,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "coordinate soil levels",
+    "shape": [
+      15
+    ],
+    "mask": true
+  },
+  "SoilAlpha": {
+    "name": "SoilAlpha",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "factor limiting ground evap",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FGR": {
+    "name": "FGR",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "heat flux into soil/snow including snow melt",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "GC_LIQ1": {
+    "name": "GC_LIQ1",
+    "size": 3312,
+    "units": "mm",
+    "datatype": "float32",
+    "long_name": "initial gridcell total liq content",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TBUILD": {
+    "name": "TBUILD",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "internal urban building temperature",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSH_G": {
+    "name": "FSH_G",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat from ground",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "URBAN_HEAT": {
+    "name": "URBAN_HEAT",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "urban heating flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QFLX_LIQ_DYNBAL": {
+    "name": "QFLX_LIQ_DYNBAL",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "liq dynamic land cover change conversion runoff flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "BTRAN": {
+    "name": "BTRAN",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "transpiration beta factor",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSAT": {
+    "name": "FSAT",
+    "size": 3312,
+    "units": "unitless",
+    "datatype": "float32",
+    "long_name": "fractional area with water table at surface",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ERRSOL": {
+    "name": "ERRSOL",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "solar radiation conservation error",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "URBAN_AC": {
+    "name": "URBAN_AC",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "urban air conditioning flux",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOOCMSL": {
+    "name": "SNOOCMSL",
+    "size": 3312,
+    "units": "kg/m2",
+    "datatype": "float32",
+    "long_name": "mass of OC in top snow layer",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "HEAT_FROM_AC": {
+    "name": "HEAT_FROM_AC",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "sensible heat flux put into canyon due to heat removed from air conditioning",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "landmask": {
+    "name": "landmask",
+    "size": 3312,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "land/ocean mask (0.=ocean and 1.=land)",
+    "shape": [
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "RH2M": {
+    "name": "RH2M",
+    "size": 3312,
+    "units": "%",
+    "datatype": "float32",
+    "long_name": "2m relative humidity",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QSOIL": {
+    "name": "QSOIL",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "Ground evaporation (soil/snow evaporation + soil/snow sublimation - dew)",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "DSTDEP": {
+    "name": "DSTDEP",
+    "size": 3312,
+    "units": "kg/m^2/s",
+    "datatype": "float32",
+    "long_name": "total dust deposition (dry+wet) from atmosphere",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FSDSVDLN": {
+    "name": "FSDSVDLN",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct vis incident solar radiation at local noon",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SNOW": {
+    "name": "SNOW",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "atmospheric snow",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "mscur": {
+    "name": "mscur",
+    "size": 1,
+    "units": "none",
+    "datatype": "int32",
+    "long_name": "current seconds of current day",
+    "shape": [
+      1
+    ],
+    "mask": true
+  },
+  "FSDSVD": {
+    "name": "FSDSVD",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "direct vis incident solar radiation",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "ERRSOI": {
+    "name": "ERRSOI",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "soil/lake energy conservation error",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TLAKE": {
+    "name": "TLAKE",
+    "size": 33120,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "lake temperature",
+    "shape": [
+      1,
+      10,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QSNWCPICE_NODYNLNDUSE": {
+    "name": "QSNWCPICE_NODYNLNDUSE",
+    "size": 3312,
+    "units": "mm H2O/s",
+    "datatype": "float32",
+    "long_name": "excess snowfall due to snow capping not including correction for land use change",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "SABG": {
+    "name": "SABG",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "solar rad absorbed by ground",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "FCTR": {
+    "name": "FCTR",
+    "size": 3312,
+    "units": "W/m^2",
+    "datatype": "float32",
+    "long_name": "canopy transpiration",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "QSNOMELT": {
+    "name": "QSNOMELT",
+    "size": 3312,
+    "units": "mm/s",
+    "datatype": "float32",
+    "long_name": "snow melt",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "TSOI_10CM": {
+    "name": "TSOI_10CM",
+    "size": 3312,
+    "units": "K",
+    "datatype": "float32",
+    "long_name": "soil temperature in top 10cm of soil",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "mask": true
+  },
+  "DZSOI": {
+    "name": "DZSOI",
+    "size": 49680,
+    "units": "m",
+    "datatype": "float32",
+    "long_name": "soil thickness",
+    "shape": [
+      15,
+      46,
+      72
+    ],
+    "mask": true
+  }
+}

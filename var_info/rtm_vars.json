@@ -1,0 +1,190 @@
+{
+  "nstep": {
+    "name": "nstep",
+    "mask": true,
+    "datatype": "int32",
+    "long_name": "time step",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "none"
+  },
+  "lat": {
+    "name": "lat",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "runoff coordinate latitude",
+    "shape": [
+      360
+    ],
+    "size": 360,
+    "units": "degrees_north"
+  },
+  "QCHANR_ICE": {
+    "name": "QCHANR_ICE",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "RTM river flow: ICE",
+    "shape": [
+      1,
+      360,
+      720
+    ],
+    "size": 259200,
+    "units": "m3/s"
+  },
+  "fthresh": {
+    "name": "fthresh",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "flooding threshold",
+    "shape": [
+      360,
+      720
+    ],
+    "size": 259200,
+    "units": "m3"
+  },
+  "date_written": {
+    "name": "date_written",
+    "mask": true,
+    "datatype": "|S1",
+    "long_name": "none",
+    "shape": [
+      1,
+      8
+    ],
+    "size": 8,
+    "units": "none"
+  },
+  "time_written": {
+    "name": "time_written",
+    "mask": true,
+    "datatype": "|S1",
+    "long_name": "none",
+    "shape": [
+      1,
+      8
+    ],
+    "size": 8,
+    "units": "none"
+  },
+  "time_bounds": {
+    "name": "time_bounds",
+    "mask": true,
+    "datatype": "float64",
+    "long_name": "history time interval endpoints",
+    "shape": [
+      1,
+      2
+    ],
+    "size": 2,
+    "units": "none"
+  },
+  "QCHOCNR_ICE": {
+    "name": "QCHOCNR_ICE",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "RTM river discharge into ocean: ICE",
+    "shape": [
+      1,
+      360,
+      720
+    ],
+    "size": 259200,
+    "units": "m3/s"
+  },
+  "mdcur": {
+    "name": "mdcur",
+    "mask": true,
+    "datatype": "int32",
+    "long_name": "current day (from base day)",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "none"
+  },
+  "mscur": {
+    "name": "mscur",
+    "mask": true,
+    "datatype": "int32",
+    "long_name": "current seconds of current day",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "none"
+  },
+  "mcsec": {
+    "name": "mcsec",
+    "mask": true,
+    "datatype": "int32",
+    "long_name": "current seconds of current date",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "s"
+  },
+  "mcdate": {
+    "name": "mcdate",
+    "mask": true,
+    "datatype": "int32",
+    "long_name": "current date (YYYYMMDD)",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "none"
+  },
+  "QCHOCNR": {
+    "name": "QCHOCNR",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "RTM river discharge into ocean: LIQ",
+    "shape": [
+      1,
+      360,
+      720
+    ],
+    "size": 259200,
+    "units": "m3/s"
+  },
+  "lon": {
+    "name": "lon",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "runoff coordinate longitude",
+    "shape": [
+      720
+    ],
+    "size": 720,
+    "units": "degrees_east"
+  },
+  "QCHANR": {
+    "name": "QCHANR",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "RTM river flow: LIQ",
+    "shape": [
+      1,
+      360,
+      720
+    ],
+    "size": 259200,
+    "units": "m3/s"
+  },
+  "time": {
+    "name": "time",
+    "mask": true,
+    "datatype": "float32",
+    "long_name": "time",
+    "shape": [
+      1
+    ],
+    "size": 1,
+    "units": "days since 2000-01-01 00:00:00"
+  }
+}

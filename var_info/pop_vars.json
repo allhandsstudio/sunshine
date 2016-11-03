@@ -1,0 +1,2015 @@
+{
+  "TFW_T": {
+    "long_name": "T flux due to freshwater flux",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TFW_T",
+    "mask": true
+  },
+  "KMT": {
+    "long_name": "k Index of Deepest Grid Cell on T Grid",
+    "units": "none",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "int32",
+    "size": 11600,
+    "name": "KMT",
+    "mask": true
+  },
+  "TEMP_MAX": {
+    "long_name": "Maximum Potential Temperature",
+    "units": "degC",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "TEMP_MAX",
+    "mask": true
+  },
+  "XBLT": {
+    "long_name": "Maximum Boundary-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "XBLT",
+    "mask": true
+  },
+  "TFW_S": {
+    "long_name": "S flux due to freshwater flux (kg of salt/m^2/s)",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TFW_S",
+    "mask": true
+  },
+  "salt_to_ppt": {
+    "long_name": "Convert Salt in gram/gram to g/kg",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "salt_to_ppt",
+    "mask": true
+  },
+  "KAPPA_ISOP": {
+    "long_name": "Isopycnal diffusion coefficient",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "KAPPA_ISOP",
+    "mask": true
+  },
+  "INT_DEPTH": {
+    "long_name": "Depth at which the Interior Region Starts",
+    "units": "cm",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "INT_DEPTH",
+    "mask": true
+  },
+  "dzw": {
+    "long_name": "midpoint of k to midpoint of k+1",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "dzw",
+    "mask": true
+  },
+  "SHF": {
+    "long_name": "Total Surface Heat Flux, Including SW",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SHF",
+    "mask": true
+  },
+  "TEMP": {
+    "long_name": "Potential Temperature",
+    "units": "degC",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "TEMP",
+    "mask": true
+  },
+  "sound": {
+    "long_name": "Speed of Sound",
+    "units": "centimeter/s",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "sound",
+    "mask": true
+  },
+  "Q": {
+    "long_name": "Static Stability (d(rho(p_r))/dz)",
+    "units": "gram/centimeter^4",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "Q",
+    "mask": true
+  },
+  "SALT_MIN": {
+    "long_name": "Minimum Salinity",
+    "units": "gram/kilogram",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "SALT_MIN",
+    "mask": true
+  },
+  "HUW": {
+    "long_name": "cell widths on West sides of U cell",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HUW",
+    "mask": true
+  },
+  "UVEL": {
+    "long_name": "Velocity in grid-x direction",
+    "units": "centimeter/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "UVEL",
+    "mask": true
+  },
+  "BSF": {
+    "long_name": "Diagnostic barotropic streamfunction",
+    "units": "Sv",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "BSF",
+    "mask": true
+  },
+  "RESID_T": {
+    "long_name": "Free-Surface Residual Flux (T)",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "RESID_T",
+    "mask": true
+  },
+  "cp_sw": {
+    "long_name": "Specific Heat of Sea Water",
+    "units": "erg/g/K",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "cp_sw",
+    "mask": true
+  },
+  "IAGE": {
+    "long_name": "Ideal Age",
+    "units": "years",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "IAGE",
+    "mask": true
+  },
+  "ULAT": {
+    "long_name": "array of u-grid latitudes",
+    "units": "degrees_north",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "ULAT",
+    "mask": true
+  },
+  "HTE": {
+    "long_name": "cell widths on East sides of T cell",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HTE",
+    "mask": true
+  },
+  "N_HEAT": {
+    "long_name": "Northward Heat Transport",
+    "units": "Pwatt",
+    "shape": [
+      1,
+      2,
+      5,
+      105
+    ],
+    "datatype": "float32",
+    "size": 1050,
+    "name": "N_HEAT",
+    "mask": true
+  },
+  "latent_heat_vapor": {
+    "long_name": "Latent Heat of Vaporization",
+    "units": "J/kg",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "latent_heat_vapor",
+    "mask": true
+  },
+  "VNS_ISOP": {
+    "long_name": "Salt Flux Tendency in grid-y Dir due to Eddy-Induced Vel (diagnostic)",
+    "units": "gram/kilogram/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNS_ISOP",
+    "mask": true
+  },
+  "omega": {
+    "long_name": "Earths Angular Velocity",
+    "units": "1/second",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "omega",
+    "mask": true
+  },
+  "HTN": {
+    "long_name": "cell widths on North sides of T cell",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HTN",
+    "mask": true
+  },
+  "VISOP": {
+    "long_name": "Bolus Velocity in grid-y direction (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VISOP",
+    "mask": true
+  },
+  "HDIFT": {
+    "long_name": "Vertically Integrated Horz Mix T tendency",
+    "units": "centimeter degC/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "HDIFT",
+    "mask": true
+  },
+  "PV": {
+    "long_name": "Potential Vorticity",
+    "units": "1/s/cm",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "PV",
+    "mask": true
+  },
+  "WISOP": {
+    "long_name": "Vertical Bolus Velocity (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WISOP",
+    "mask": true
+  },
+  "QFLUX": {
+    "long_name": "Internal Ocean Heat Flux Due to Ice Formation; heat of fusion > 0 or ice-melting potential < 0",
+    "units": "Watts/meter^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "QFLUX",
+    "mask": true
+  },
+  "ADVS": {
+    "long_name": "Vertically-Integrated S Advection Tendency",
+    "units": "centimeter gram/kilogram/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVS",
+    "mask": true
+  },
+  "grav": {
+    "long_name": "Acceleration Due to Gravity",
+    "units": "centimeter/s^2",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "grav",
+    "mask": true
+  },
+  "KVMIX_M": {
+    "long_name": "Vertical viscosity due to Tidal Mixing + background",
+    "units": "centimeter^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "KVMIX_M",
+    "mask": true
+  },
+  "VVC": {
+    "long_name": "total vertical momentum viscosity",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VVC",
+    "mask": true
+  },
+  "ppt_to_salt": {
+    "long_name": "Convert Salt in g/kg to gram/gram",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "ppt_to_salt",
+    "mask": true
+  },
+  "dTEMP_NEG_2D": {
+    "long_name": "min neg column temperature timestep diff",
+    "units": "degC",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "dTEMP_NEG_2D",
+    "mask": true
+  },
+  "z_w": {
+    "long_name": "depth from surface to top of layer",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "z_w",
+    "mask": true
+  },
+  "TLAT": {
+    "long_name": "array of t-grid latitudes",
+    "units": "degrees_north",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "TLAT",
+    "mask": true
+  },
+  "time": {
+    "long_name": "time",
+    "units": "days since 0000-01-01 00:00:00",
+    "shape": [
+      1
+    ],
+    "datatype": "float64",
+    "size": 1,
+    "name": "time",
+    "mask": true
+  },
+  "TPOWER": {
+    "long_name": "Energy Used by Vertical Mixing",
+    "units": "erg/s/cm^3",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "TPOWER",
+    "mask": true
+  },
+  "RHO": {
+    "long_name": "In-Situ Density",
+    "units": "gram/centimeter^3",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "RHO",
+    "mask": true
+  },
+  "ADVT_SUBM": {
+    "long_name": "Vertically-Integrated T submeso Advection Tendency (diagnostic)",
+    "units": "cm degC/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVT_SUBM",
+    "mask": true
+  },
+  "SENH_F": {
+    "long_name": "Sensible Heat Flux from Coupler",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SENH_F",
+    "mask": true
+  },
+  "HLS_SUBM": {
+    "long_name": "Horizontal length scale used in submeso",
+    "units": "cm",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "HLS_SUBM",
+    "mask": true
+  },
+  "heat_to_PW": {
+    "long_name": "Convert Heat Flux to Petawatts",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "heat_to_PW",
+    "mask": true
+  },
+  "UET": {
+    "long_name": "Flux of Heat in grid-x direction",
+    "units": "degC/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "UET",
+    "mask": true
+  },
+  "HOR_DIFF": {
+    "long_name": "Horizontal diffusion coefficient",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "HOR_DIFF",
+    "mask": true
+  },
+  "mass_to_Sv": {
+    "long_name": "Convert Mass Flux to Sverdrups",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "mass_to_Sv",
+    "mask": true
+  },
+  "SFWF_WRST": {
+    "long_name": "Virtual Salt Flux due to weak restoring",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SFWF_WRST",
+    "mask": true
+  },
+  "DXU": {
+    "long_name": "x-spacing centered at U points",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "DXU",
+    "mask": true
+  },
+  "ROFF_F": {
+    "long_name": "Runoff Flux from Coupler",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ROFF_F",
+    "mask": true
+  },
+  "RHO_VINT": {
+    "long_name": "Vertical Integral of In-Situ Density",
+    "units": "gram/centimeter^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "RHO_VINT",
+    "mask": true
+  },
+  "VDC_S": {
+    "long_name": "total diabatic vertical SALT diffusivity",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VDC_S",
+    "mask": true
+  },
+  "KMU": {
+    "long_name": "k Index of Deepest Grid Cell on U Grid",
+    "units": "none",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "int32",
+    "size": 11600,
+    "name": "KMU",
+    "mask": true
+  },
+  "HU": {
+    "long_name": "ocean depth at U points",
+    "units": "centimeter",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HU",
+    "mask": true
+  },
+  "UES": {
+    "long_name": "Salt Flux in grid-x direction",
+    "units": "gram/kilogram/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "UES",
+    "mask": true
+  },
+  "WTS": {
+    "long_name": "Salt Flux Across Top Face",
+    "units": "gram/kilogram/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WTS",
+    "mask": true
+  },
+  "EVAP_F": {
+    "long_name": "Evaporation Flux from Coupler",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "EVAP_F",
+    "mask": true
+  },
+  "rho_sw": {
+    "long_name": "Density of Sea Water",
+    "units": "gram/centimeter^3",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "rho_sw",
+    "mask": true
+  },
+  "ULONG": {
+    "long_name": "array of u-grid longitudes",
+    "units": "degrees_east",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "ULONG",
+    "mask": true
+  },
+  "HT": {
+    "long_name": "ocean depth at T points",
+    "units": "centimeter",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HT",
+    "mask": true
+  },
+  "SALT": {
+    "long_name": "Salinity",
+    "units": "gram/kilogram",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "SALT",
+    "mask": true
+  },
+  "MELTH_F": {
+    "long_name": "Melt Heat Flux from Coupler",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "MELTH_F",
+    "mask": true
+  },
+  "USUBM": {
+    "long_name": "Submeso velocity in grid-x direction (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "USUBM",
+    "mask": true
+  },
+  "ADVS_SUBM": {
+    "long_name": "Vertically-Integrated S submeso Advection Tendency (diagnostic)",
+    "units": "cm gram/kilogram/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVS_SUBM",
+    "mask": true
+  },
+  "SSH": {
+    "long_name": "Sea Surface Height",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SSH",
+    "mask": true
+  },
+  "WTT": {
+    "long_name": "Heat Flux Across Top Face",
+    "units": "degC/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WTT",
+    "mask": true
+  },
+  "SALT_MAX": {
+    "long_name": "Maximum Salinity",
+    "units": "gram/kilogram",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "SALT_MAX",
+    "mask": true
+  },
+  "XMXL": {
+    "long_name": "Maximum Mixed-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "XMXL",
+    "mask": true
+  },
+  "HMXL": {
+    "long_name": "Mixed-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "HMXL",
+    "mask": true
+  },
+  "PREC_F": {
+    "long_name": "Precipitation Flux from Cpl (rain+snow)",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "PREC_F",
+    "mask": true
+  },
+  "VNT_SUBM": {
+    "long_name": "Heat Flux Tendency in grid-y Dir due to submeso Vel (diagnostic)",
+    "units": "degC/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNT_SUBM",
+    "mask": true
+  },
+  "rho_fw": {
+    "long_name": "Density of Fresh Water",
+    "units": "gram/centimeter^3",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "rho_fw",
+    "mask": true
+  },
+  "TBLT": {
+    "long_name": "Minimum Boundary-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TBLT",
+    "mask": true
+  },
+  "ADVT_ISOP": {
+    "long_name": "Vertically-Integrated T Eddy-Induced Advection Tendency (diagnostic)",
+    "units": "cm degC/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVT_ISOP",
+    "mask": true
+  },
+  "ocn_ref_salinity": {
+    "long_name": "Ocean Reference Salinity",
+    "units": "g/kg",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "ocn_ref_salinity",
+    "mask": true
+  },
+  "VSUBM": {
+    "long_name": "Submeso velocity in grid-y direction (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VSUBM",
+    "mask": true
+  },
+  "HDIFS": {
+    "long_name": "Vertically Integrated Horz Diff S tendency",
+    "units": "centimeter gram/kilogram/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "HDIFS",
+    "mask": true
+  },
+  "UISOP": {
+    "long_name": "Bolus Velocity in grid-x direction (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "UISOP",
+    "mask": true
+  },
+  "sflux_factor": {
+    "long_name": "Convert Salt Flux to Salt Flux (in model units)",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "sflux_factor",
+    "mask": true
+  },
+  "HUS": {
+    "long_name": "cell widths on South sides of U cell",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "HUS",
+    "mask": true
+  },
+  "transport_components": {
+    "long_name": "T,S transport components",
+    "units": "",
+    "shape": [
+      5,
+      256
+    ],
+    "datatype": "|S1",
+    "size": 1280,
+    "name": "transport_components",
+    "mask": true
+  },
+  "TAUX2": {
+    "long_name": "Windstress**2 in grid-x direction",
+    "units": "dyne^2/centimeter^4",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TAUX2",
+    "mask": true
+  },
+  "N_SALT": {
+    "long_name": "Northward Salt Transport",
+    "units": "gram centimeter^3/kg/s",
+    "shape": [
+      1,
+      2,
+      5,
+      105
+    ],
+    "datatype": "float32",
+    "size": 1050,
+    "name": "N_SALT",
+    "mask": true
+  },
+  "REGION_MASK": {
+    "long_name": "basin index number (signed integers)",
+    "units": "none",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "int32",
+    "size": 11600,
+    "name": "REGION_MASK",
+    "mask": true
+  },
+  "moc_z": {
+    "long_name": "depth from surface to top of layer",
+    "units": "centimeters",
+    "shape": [
+      61
+    ],
+    "datatype": "float32",
+    "size": 61,
+    "name": "moc_z",
+    "mask": true
+  },
+  "WSUBM": {
+    "long_name": "Vertical submeso velocity (diagnostic)",
+    "units": "cm/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WSUBM",
+    "mask": true
+  },
+  "IOFF_F": {
+    "long_name": "Ice Runoff Flux from Coupler due to Land-Model Snow Capping",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "IOFF_F",
+    "mask": true
+  },
+  "VNT": {
+    "long_name": "Flux of Heat in grid-y direction",
+    "units": "degC/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNT",
+    "mask": true
+  },
+  "TAUX": {
+    "long_name": "Windstress in grid-x direction",
+    "units": "dyne/centimeter^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TAUX",
+    "mask": true
+  },
+  "LWDN_F": {
+    "long_name": "Longwave Heat Flux (dn) from Coupler",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "LWDN_F",
+    "mask": true
+  },
+  "dTEMP_POS_2D": {
+    "long_name": "max pos column temperature timestep diff",
+    "units": "degC",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "dTEMP_POS_2D",
+    "mask": true
+  },
+  "z_t_150m": {
+    "long_name": "depth from surface to midpoint of layer",
+    "units": "centimeters",
+    "shape": [
+      15
+    ],
+    "datatype": "float32",
+    "size": 15,
+    "name": "z_t_150m",
+    "mask": true
+  },
+  "DYT": {
+    "long_name": "y-spacing centered at T points",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "DYT",
+    "mask": true
+  },
+  "SNOW_F": {
+    "long_name": "Snow Flux from Coupler",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SNOW_F",
+    "mask": true
+  },
+  "stefan_boltzmann": {
+    "long_name": "Stefan-Boltzmann Constant",
+    "units": "watt/m^2/degK^4",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "stefan_boltzmann",
+    "mask": true
+  },
+  "TEMP_MIN": {
+    "long_name": "Minimum Potential Temperature",
+    "units": "degC",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "TEMP_MIN",
+    "mask": true
+  },
+  "rho_air": {
+    "long_name": "Ambient Air Density",
+    "units": "kg/m^3",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "rho_air",
+    "mask": true
+  },
+  "TLONG": {
+    "long_name": "array of t-grid longitudes",
+    "units": "degrees_east",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "TLONG",
+    "mask": true
+  },
+  "VVEL": {
+    "long_name": "Velocity in grid-y direction",
+    "units": "centimeter/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VVEL",
+    "mask": true
+  },
+  "QSW_HTP": {
+    "long_name": "Solar Short-Wave Heat Flux in top layer",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "QSW_HTP",
+    "mask": true
+  },
+  "time_bound": {
+    "long_name": "boundaries for time-averaging interval",
+    "units": "days since 0000-01-01 00:00:00",
+    "shape": [
+      1,
+      2
+    ],
+    "datatype": "float64",
+    "size": 2,
+    "name": "time_bound",
+    "mask": true
+  },
+  "fwflux_factor": {
+    "long_name": "Convert Net Fresh Water Flux to Salt Flux (in model units)",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "fwflux_factor",
+    "mask": true
+  },
+  "IFRAC": {
+    "long_name": "Ice Fraction from Coupler",
+    "units": "fraction",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "IFRAC",
+    "mask": true
+  },
+  "SHF_QSW": {
+    "long_name": "Solar Short-Wave Heat Flux",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SHF_QSW",
+    "mask": true
+  },
+  "WVEL2": {
+    "long_name": "Vertical Velocity**2",
+    "units": "centimeter^2/s^2",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WVEL2",
+    "mask": true
+  },
+  "FW": {
+    "long_name": "Freshwater Flux",
+    "units": "centimeter/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "FW",
+    "mask": true
+  },
+  "z_t": {
+    "long_name": "depth from surface to midpoint of layer",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "z_t",
+    "mask": true
+  },
+  "SSH2": {
+    "long_name": "SSH**2",
+    "units": "cm^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SSH2",
+    "mask": true
+  },
+  "DXT": {
+    "long_name": "x-spacing centered at T points",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "DXT",
+    "mask": true
+  },
+  "MOC": {
+    "long_name": "Meridional Overturning Circulation",
+    "units": "Sverdrups",
+    "shape": [
+      1,
+      2,
+      3,
+      61,
+      105
+    ],
+    "datatype": "float32",
+    "size": 38430,
+    "name": "MOC",
+    "mask": true
+  },
+  "VNS_SUBM": {
+    "long_name": "Salt Flux Tendency in grid-y Dir due to submeso Vel (diagnostic)",
+    "units": "gram/kilogram/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNS_SUBM",
+    "mask": true
+  },
+  "UAREA": {
+    "long_name": "area of U cells",
+    "units": "centimeter^2",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "UAREA",
+    "mask": true
+  },
+  "DIA_DEPTH": {
+    "long_name": "Depth of the Diabatic Region at the Surface",
+    "units": "cm",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "DIA_DEPTH",
+    "mask": true
+  },
+  "ANGLE": {
+    "long_name": "angle grid makes with latitude line",
+    "units": "radians",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "ANGLE",
+    "mask": true
+  },
+  "days_in_norm_year": {
+    "long_name": "Calendar Length",
+    "units": "days",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "days_in_norm_year",
+    "mask": true
+  },
+  "LWUP_F": {
+    "long_name": "Longwave Heat Flux (up) from Coupler",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "LWUP_F",
+    "mask": true
+  },
+  "transport_regions": {
+    "long_name": "regions for all transport diagnostics",
+    "units": "",
+    "shape": [
+      2,
+      256
+    ],
+    "datatype": "|S1",
+    "size": 512,
+    "name": "transport_regions",
+    "mask": true
+  },
+  "sea_ice_salinity": {
+    "long_name": "Salinity of Sea Ice",
+    "units": "g/kg",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "sea_ice_salinity",
+    "mask": true
+  },
+  "vonkar": {
+    "long_name": "von Karman Constant",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "vonkar",
+    "mask": true
+  },
+  "SU": {
+    "long_name": "Vertically Integrated Velocity in grid-x direction",
+    "units": "centimeter^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SU",
+    "mask": true
+  },
+  "SV": {
+    "long_name": "Vertically Integrated Velocity in grid-y direction",
+    "units": "centimeter^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SV",
+    "mask": true
+  },
+  "ADVS_ISOP": {
+    "long_name": "Vertically-Integrated S Eddy-Induced Advection Tendency (diagnostic)",
+    "units": "cm gram/kilogram/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVS_ISOP",
+    "mask": true
+  },
+  "SFWF": {
+    "long_name": "Virtual Salt Flux in FW Flux formulation",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SFWF",
+    "mask": true
+  },
+  "hflux_factor": {
+    "long_name": "Convert Heat and Solar Flux to Temperature Flux",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "hflux_factor",
+    "mask": true
+  },
+  "momentum_factor": {
+    "long_name": "Convert Windstress to Velocity Flux",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "momentum_factor",
+    "mask": true
+  },
+  "VNS": {
+    "long_name": "Salt Flux in grid-y direction",
+    "units": "gram/kilogram/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNS",
+    "mask": true
+  },
+  "lat_aux_grid": {
+    "long_name": "latitude grid for transport diagnostics",
+    "units": "degrees_north",
+    "shape": [
+      105
+    ],
+    "datatype": "float32",
+    "size": 105,
+    "name": "lat_aux_grid",
+    "mask": true
+  },
+  "WVEL": {
+    "long_name": "Vertical Velocity",
+    "units": "centimeter/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "WVEL",
+    "mask": true
+  },
+  "nsurface_u": {
+    "long_name": "Number of Ocean U Points at Surface",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "nsurface_u",
+    "mask": true
+  },
+  "KAPPA_THIC": {
+    "long_name": "Thickness diffusion coefficient",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "KAPPA_THIC",
+    "mask": true
+  },
+  "SALT_F": {
+    "long_name": "Salt Flux from Coupler (kg of salt/m^2/s)",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "SALT_F",
+    "mask": true
+  },
+  "RESID_S": {
+    "long_name": "Free-Surface Residual Flux (S)",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "RESID_S",
+    "mask": true
+  },
+  "TLT": {
+    "long_name": "Transition Layer Thickness",
+    "units": "cm",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TLT",
+    "mask": true
+  },
+  "ADVT": {
+    "long_name": "Vertically-Integrated T Advection Tendency",
+    "units": "centimeter degC/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "ADVT",
+    "mask": true
+  },
+  "salt_to_Svppt": {
+    "long_name": "Convert Salt Flux to Sverdrups*g/kg",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "salt_to_Svppt",
+    "mask": true
+  },
+  "salt_to_mmday": {
+    "long_name": "Convert Salt to Water (millimeters/day)",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "salt_to_mmday",
+    "mask": true
+  },
+  "MELT_F": {
+    "long_name": "Melt Flux from Coupler",
+    "units": "kg/m^2/s",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "MELT_F",
+    "mask": true
+  },
+  "VNT_ISOP": {
+    "long_name": "Heat Flux Tendency in grid-y Dir due to Eddy-Induced Vel (diagnostic)",
+    "units": "degC/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VNT_ISOP",
+    "mask": true
+  },
+  "moc_components": {
+    "long_name": "MOC component names",
+    "units": "",
+    "shape": [
+      3,
+      256
+    ],
+    "datatype": "|S1",
+    "size": 768,
+    "name": "moc_components",
+    "mask": true
+  },
+  "z_w_top": {
+    "long_name": "depth from surface to top of layer",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "z_w_top",
+    "mask": true
+  },
+  "T0_Kelvin": {
+    "long_name": "Zero Point for Celsius",
+    "units": "degK",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "T0_Kelvin",
+    "mask": true
+  },
+  "KVMIX": {
+    "long_name": "Vertical diabatic diffusivity due to Tidal Mixing + background",
+    "units": "centimeter^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "KVMIX",
+    "mask": true
+  },
+  "PD": {
+    "long_name": "Potential Density Ref to Surface",
+    "units": "gram/centimeter^3",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "PD",
+    "mask": true
+  },
+  "VDC_T": {
+    "long_name": "total diabatic vertical TEMP diffusivity",
+    "units": "cm^2/s",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VDC_T",
+    "mask": true
+  },
+  "DYU": {
+    "long_name": "y-spacing centered at U points",
+    "units": "centimeters",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "DYU",
+    "mask": true
+  },
+  "ANGLET": {
+    "long_name": "angle grid makes with latitude line on T grid",
+    "units": "radians",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "ANGLET",
+    "mask": true
+  },
+  "cp_air": {
+    "long_name": "Heat Capacity of Air",
+    "units": "joule/kg/degK",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "cp_air",
+    "mask": true
+  },
+  "QSW_HBL": {
+    "long_name": "Solar Short-Wave Heat Flux in bndry layer",
+    "units": "watt/m^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "QSW_HBL",
+    "mask": true
+  },
+  "nsurface_t": {
+    "long_name": "Number of Ocean T Points at Surface",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "nsurface_t",
+    "mask": true
+  },
+  "z_w_bot": {
+    "long_name": "depth from surface to bottom of layer",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "z_w_bot",
+    "mask": true
+  },
+  "salinity_factor": {
+    "long_name": "none",
+    "units": "none",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "salinity_factor",
+    "mask": true
+  },
+  "TAUY2": {
+    "long_name": "Windstress**2 in grid-y direction",
+    "units": "dyne^2/centimeter^4",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TAUY2",
+    "mask": true
+  },
+  "VVEL2": {
+    "long_name": "Velocity**2 in grid-y direction",
+    "units": "centimeter^2/s^2",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "VVEL2",
+    "mask": true
+  },
+  "latent_heat_fusion": {
+    "long_name": "Latent Heat of Fusion",
+    "units": "erg/g",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "latent_heat_fusion",
+    "mask": true
+  },
+  "radius": {
+    "long_name": "Earths Radius",
+    "units": "centimeters",
+    "shape": [],
+    "datatype": "float64",
+    "size": 1,
+    "name": "radius",
+    "mask": true
+  },
+  "dz": {
+    "long_name": "thickness of layer k",
+    "units": "centimeters",
+    "shape": [
+      60
+    ],
+    "datatype": "float32",
+    "size": 60,
+    "name": "dz",
+    "mask": true
+  },
+  "TMXL": {
+    "long_name": "Minimum Mixed-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TMXL",
+    "mask": true
+  },
+  "TAREA": {
+    "long_name": "area of T cells",
+    "units": "centimeter^2",
+    "shape": [
+      116,
+      100
+    ],
+    "datatype": "float64",
+    "size": 11600,
+    "name": "TAREA",
+    "mask": true
+  },
+  "UVEL2": {
+    "long_name": "Velocity**2 in grid-x direction",
+    "units": "centimeter^2/s^2",
+    "shape": [
+      1,
+      60,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 696000,
+    "name": "UVEL2",
+    "mask": true
+  },
+  "TAUY": {
+    "long_name": "Windstress in grid-y direction",
+    "units": "dyne/centimeter^2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "TAUY",
+    "mask": true
+  },
+  "HBLT": {
+    "long_name": "Boundary-Layer Depth",
+    "units": "centimeter",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "datatype": "float32",
+    "size": 11600,
+    "name": "HBLT",
+    "mask": true
+  }
+}

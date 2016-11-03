@@ -1,0 +1,1511 @@
+{
+  "time_written": {
+    "long_name": "none",
+    "size": 8,
+    "name": "time_written",
+    "shape": [
+      1,
+      8
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "|S1"
+  },
+  "PS": {
+    "long_name": "Surface pressure",
+    "size": 3312,
+    "name": "PS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "Pa",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "DTCOND": {
+    "long_name": "T tendency - moist processes",
+    "size": 86112,
+    "name": "DTCOND",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "co2vmr": {
+    "long_name": "co2 volume mixing ratio",
+    "size": 1,
+    "name": "co2vmr",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FLNTC": {
+    "long_name": "Clearsky net longwave flux at top of model",
+    "size": 3312,
+    "name": "FLNTC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FLDSC": {
+    "long_name": "Clearsky downwelling longwave flux at surface",
+    "size": 3312,
+    "name": "FLDSC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CLOUD": {
+    "long_name": "Cloud fraction",
+    "size": 86112,
+    "name": "CLOUD",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "hyai": {
+    "long_name": "hybrid A coefficient at layer interfaces",
+    "size": 27,
+    "name": "hyai",
+    "shape": [
+      27
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FSNTC": {
+    "long_name": "Clearsky net solar flux at top of model",
+    "size": 3312,
+    "name": "FSNTC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "PBLH": {
+    "long_name": "PBL height",
+    "size": 3312,
+    "name": "PBLH",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "wnummax": {
+    "long_name": "cutoff Fourier wavenumber",
+    "size": 46,
+    "name": "wnummax",
+    "shape": [
+      46
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "TSMX": {
+    "long_name": "Maximum surface temperature over output period",
+    "size": 3312,
+    "name": "TSMX",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "K",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "nbsec": {
+    "long_name": "seconds of base date",
+    "size": 1,
+    "name": "nbsec",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "CLDHGH": {
+    "long_name": "Vertically-integrated high cloud",
+    "size": 3312,
+    "name": "CLDHGH",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "P0": {
+    "long_name": "reference pressure",
+    "size": 1,
+    "name": "P0",
+    "shape": [],
+    "units": "Pa",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "VV": {
+    "long_name": "Meridional velocity squared",
+    "size": 86112,
+    "name": "VV",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m2/s2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FSNS": {
+    "long_name": "Net solar flux at surface",
+    "size": 3312,
+    "name": "FSNS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "T": {
+    "long_name": "Temperature",
+    "size": 86112,
+    "name": "T",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "AEROD_v": {
+    "long_name": "Total Aerosol Optical Depth in visible band",
+    "size": 3312,
+    "name": "AEROD_v",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "1",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ICEFRAC": {
+    "long_name": "Fraction of sfc area covered by sea-ice",
+    "size": 3312,
+    "name": "ICEFRAC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "QREFHT": {
+    "long_name": "Reference height humidity",
+    "size": 3312,
+    "name": "QREFHT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CLDICE": {
+    "long_name": "Grid box averaged cloud ice amount",
+    "size": 86112,
+    "name": "CLDICE",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ilev": {
+    "long_name": "hybrid level at interfaces (1000*(A+B))",
+    "size": 27,
+    "name": "ilev",
+    "shape": [
+      27
+    ],
+    "units": "level",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "Q": {
+    "long_name": "Specific humidity",
+    "size": 86112,
+    "name": "Q",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ICWMR": {
+    "long_name": "Prognostic in-cloud water mixing ratio",
+    "size": 86112,
+    "name": "ICWMR",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ndcur": {
+    "long_name": "current day (from base day)",
+    "size": 1,
+    "name": "ndcur",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "ntrk": {
+    "long_name": "spectral truncation parameter K",
+    "size": 1,
+    "name": "ntrk",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "VD01": {
+    "long_name": "Vertical diffusion of Q",
+    "size": 86112,
+    "name": "VD01",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "gw": {
+    "long_name": "gauss weights",
+    "size": 46,
+    "name": "gw",
+    "shape": [
+      46
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "f12vmr": {
+    "long_name": "f12 volume mixing ratio",
+    "size": 1,
+    "name": "f12vmr",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "TGCLDIWP": {
+    "long_name": "Total grid-box cloud ice water path",
+    "size": 3312,
+    "name": "TGCLDIWP",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "gram/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "lon": {
+    "long_name": "longitude",
+    "size": 72,
+    "name": "lon",
+    "shape": [
+      72
+    ],
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "PRECSL": {
+    "long_name": "Large-scale (stable) snow rate (water equivalent)",
+    "size": 3312,
+    "name": "PRECSL",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "datesec": {
+    "long_name": "current seconds of current date",
+    "size": 1,
+    "name": "datesec",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "nsbase": {
+    "long_name": "seconds of base day",
+    "size": 1,
+    "name": "nsbase",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "VT": {
+    "long_name": "Meridional heat transport",
+    "size": 86112,
+    "name": "VT",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "DTV": {
+    "long_name": "T vertical diffusion",
+    "size": 86112,
+    "name": "DTV",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FICE": {
+    "long_name": "Fractional ice content within cloud",
+    "size": 86112,
+    "name": "FICE",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "OMEGAT": {
+    "long_name": "Vertical heat flux",
+    "size": 86112,
+    "name": "OMEGAT",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K Pa/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "LWCF": {
+    "long_name": "Longwave cloud forcing",
+    "size": 3312,
+    "name": "LWCF",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TMQ": {
+    "long_name": "Total (vertically integrated) precipitable water",
+    "size": 3312,
+    "name": "TMQ",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "kg/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TS": {
+    "long_name": "Surface temperature (radiative)",
+    "size": 3312,
+    "name": "TS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "K",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "PRECL": {
+    "long_name": "Large-scale (stable) precipitation rate (liq + ice)",
+    "size": 3312,
+    "name": "PRECL",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "QRS": {
+    "long_name": "Solar heating rate",
+    "size": 86112,
+    "name": "QRS",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TGCLDCWP": {
+    "long_name": "Total grid-box cloud water path (liquid and ice)",
+    "size": 3312,
+    "name": "TGCLDCWP",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "gram/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ndbase": {
+    "long_name": "base day",
+    "size": 1,
+    "name": "ndbase",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "TAUY": {
+    "long_name": "Meridional surface stress",
+    "size": 3312,
+    "name": "TAUY",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "N/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "OCNFRAC": {
+    "long_name": "Fraction of sfc area covered by ocean",
+    "size": 3312,
+    "name": "OCNFRAC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "Z3": {
+    "long_name": "Geopotential Height (above sea level)",
+    "size": 86112,
+    "name": "Z3",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TGCLDLWP": {
+    "long_name": "Total grid-box cloud liquid water path",
+    "size": 3312,
+    "name": "TGCLDLWP",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "gram/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "f11vmr": {
+    "long_name": "f11 volume mixing ratio",
+    "size": 1,
+    "name": "f11vmr",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FSNTOA": {
+    "long_name": "Net solar flux at top of atmosphere",
+    "size": 3312,
+    "name": "FSNTOA",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "U": {
+    "long_name": "Zonal wind",
+    "size": 86112,
+    "name": "U",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "slon": {
+    "long_name": "staggered longitude",
+    "size": 72,
+    "name": "slon",
+    "shape": [
+      72
+    ],
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FSDSC": {
+    "long_name": "Clearsky downwelling solar flux at surface",
+    "size": 3312,
+    "name": "FSDSC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CONCLD": {
+    "long_name": "Convective cloud cover",
+    "size": 86112,
+    "name": "CONCLD",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CLDLOW": {
+    "long_name": "Vertically-integrated low cloud",
+    "size": 3312,
+    "name": "CLDLOW",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FLNSC": {
+    "long_name": "Clearsky net longwave flux at surface",
+    "size": 3312,
+    "name": "FLNSC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SOLIN": {
+    "long_name": "Solar insolation",
+    "size": 3312,
+    "name": "SOLIN",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "U10": {
+    "long_name": "10m wind speed",
+    "size": 3312,
+    "name": "U10",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "slat": {
+    "long_name": "staggered latitude",
+    "size": 45,
+    "name": "slat",
+    "shape": [
+      45
+    ],
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "PRECC": {
+    "long_name": "Convective precipitation rate (liq + ice)",
+    "size": 3312,
+    "name": "PRECC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "hybm": {
+    "long_name": "hybrid B coefficient at layer midpoints",
+    "size": 26,
+    "name": "hybm",
+    "shape": [
+      26
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "LHFLX": {
+    "long_name": "Surface latent heat flux",
+    "size": 3312,
+    "name": "LHFLX",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "time_bnds": {
+    "long_name": "time interval endpoints",
+    "size": 2,
+    "name": "time_bnds",
+    "shape": [
+      1,
+      2
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "LANDFRAC": {
+    "long_name": "Fraction of sfc area covered by land",
+    "size": 3312,
+    "name": "LANDFRAC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TAUX": {
+    "long_name": "Zonal surface stress",
+    "size": 3312,
+    "name": "TAUX",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "N/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "PSL": {
+    "long_name": "Sea level pressure",
+    "size": 3312,
+    "name": "PSL",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "Pa",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "RELHUM": {
+    "long_name": "Relative humidity",
+    "size": 86112,
+    "name": "RELHUM",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "percent",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "TSMN": {
+    "long_name": "Minimum surface temperature over output period",
+    "size": 3312,
+    "name": "TSMN",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "K",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ntrm": {
+    "long_name": "spectral truncation parameter M",
+    "size": 1,
+    "name": "ntrm",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "QRL": {
+    "long_name": "Longwave heating rate",
+    "size": 86112,
+    "name": "QRL",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "K/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CLDLIQ": {
+    "long_name": "Grid box averaged cloud liquid amount",
+    "size": 86112,
+    "name": "CLDLIQ",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "QFLX": {
+    "long_name": "Surface water flux",
+    "size": 3312,
+    "name": "QFLX",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "kg/m2/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SHFLX": {
+    "long_name": "Surface sensible heat flux",
+    "size": 3312,
+    "name": "SHFLX",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "EMIS": {
+    "long_name": "cloud emissivity",
+    "size": 86112,
+    "name": "EMIS",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "1",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "OMEGA": {
+    "long_name": "Vertical velocity (pressure)",
+    "size": 86112,
+    "name": "OMEGA",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "Pa/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "hybi": {
+    "long_name": "hybrid B coefficient at layer interfaces",
+    "size": 27,
+    "name": "hybi",
+    "shape": [
+      27
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "w_stag": {
+    "long_name": "staggered latitude weights",
+    "size": 45,
+    "name": "w_stag",
+    "shape": [
+      45
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "TREFHT": {
+    "long_name": "Reference height temperature",
+    "size": 3312,
+    "name": "TREFHT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "K",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "date_written": {
+    "long_name": "none",
+    "size": 8,
+    "name": "date_written",
+    "shape": [
+      1,
+      8
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "|S1"
+  },
+  "time": {
+    "long_name": "time",
+    "size": 1,
+    "name": "time",
+    "shape": [
+      1
+    ],
+    "units": "days since 2000-01-01 00:00:00",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "ntrn": {
+    "long_name": "spectral truncation parameter N",
+    "size": 1,
+    "name": "ntrn",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "SWCF": {
+    "long_name": "Shortwave cloud forcing",
+    "size": 3312,
+    "name": "SWCF",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "nbdate": {
+    "long_name": "base date (YYYYMMDD)",
+    "size": 1,
+    "name": "nbdate",
+    "shape": [],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "FLUTC": {
+    "long_name": "Clearsky upwelling longwave flux at top of model",
+    "size": 3312,
+    "name": "FLUTC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "VU": {
+    "long_name": "Meridional flux of zonal momentum",
+    "size": 86112,
+    "name": "VU",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m2/s2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ch4vmr": {
+    "long_name": "ch4 volume mixing ratio",
+    "size": 1,
+    "name": "ch4vmr",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FLNT": {
+    "long_name": "Net longwave flux at top of model",
+    "size": 3312,
+    "name": "FLNT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FSNT": {
+    "long_name": "Net solar flux at top of model",
+    "size": 3312,
+    "name": "FSNT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "VQ": {
+    "long_name": "Meridional water transport",
+    "size": 86112,
+    "name": "VQ",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m/skg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SFCLDICE": {
+    "long_name": "CLDICE surface flux",
+    "size": 3312,
+    "name": "SFCLDICE",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "kg/m2/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SNOWHLND": {
+    "long_name": "Water equivalent snow depth",
+    "size": 3312,
+    "name": "SNOWHLND",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "mdt": {
+    "long_name": "timestep",
+    "size": 1,
+    "name": "mdt",
+    "shape": [],
+    "units": "s",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "nlon": {
+    "long_name": "number of longitudes",
+    "size": 46,
+    "name": "nlon",
+    "shape": [
+      46
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "FSDS": {
+    "long_name": "Downwelling solar flux at surface",
+    "size": 3312,
+    "name": "FSDS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SFCLDLIQ": {
+    "long_name": "CLDLIQ surface flux",
+    "size": 3312,
+    "name": "SFCLDLIQ",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "kg/m2/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "ICIMR": {
+    "long_name": "Prognostic in-cloud ice mixing ratio",
+    "size": 86112,
+    "name": "ICIMR",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FLDS": {
+    "long_name": "Downwelling longwave flux at surface",
+    "size": 3312,
+    "name": "FLDS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "UU": {
+    "long_name": "Zonal velocity squared",
+    "size": 86112,
+    "name": "UU",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m2/s2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FSNTOAC": {
+    "long_name": "Clearsky net solar flux at top of atmosphere",
+    "size": 3312,
+    "name": "FSNTOAC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "lat": {
+    "long_name": "latitude",
+    "size": 46,
+    "name": "lat",
+    "shape": [
+      46
+    ],
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FSUTOA": {
+    "long_name": "Upwelling solar flux at top of atmosphere",
+    "size": 3312,
+    "name": "FSUTOA",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "hyam": {
+    "long_name": "hybrid A coefficient at layer midpoints",
+    "size": 26,
+    "name": "hyam",
+    "shape": [
+      26
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "nsteph": {
+    "long_name": "current timestep",
+    "size": 1,
+    "name": "nsteph",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "DCQ": {
+    "long_name": "Q tendency due to moist processes",
+    "size": 86112,
+    "name": "DCQ",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "kg/kg/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "nscur": {
+    "long_name": "current seconds of current day",
+    "size": 1,
+    "name": "nscur",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "FLUT": {
+    "long_name": "Upwelling longwave flux at top of model",
+    "size": 3312,
+    "name": "FLUT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "n2ovmr": {
+    "long_name": "n2o volume mixing ratio",
+    "size": 1,
+    "name": "n2ovmr",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "FLNS": {
+    "long_name": "Net longwave flux at surface",
+    "size": 3312,
+    "name": "FLNS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "V": {
+    "long_name": "Meridional wind",
+    "size": 86112,
+    "name": "V",
+    "shape": [
+      1,
+      26,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "SNOWHICE": {
+    "long_name": "Snow depth over ice",
+    "size": 3312,
+    "name": "SNOWHICE",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "CLDMED": {
+    "long_name": "Vertically-integrated mid-level cloud",
+    "size": 3312,
+    "name": "CLDMED",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FSNSC": {
+    "long_name": "Clearsky net solar flux at surface",
+    "size": 3312,
+    "name": "FSNSC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "sol_tsi": {
+    "long_name": "total solar irradiance",
+    "size": 1,
+    "name": "sol_tsi",
+    "shape": [
+      1
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "date": {
+    "long_name": "current date (YYYYMMDD)",
+    "size": 1,
+    "name": "date",
+    "shape": [
+      1
+    ],
+    "units": "none",
+    "mask": true,
+    "datatype": "int32"
+  },
+  "PRECSC": {
+    "long_name": "Convective snow rate (water equivalent)",
+    "size": 3312,
+    "name": "PRECSC",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m/s",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "PHIS": {
+    "long_name": "Surface geopotential",
+    "size": 3312,
+    "name": "PHIS",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "m2/s2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "FSDTOA": {
+    "long_name": "Downwelling solar flux at top of atmosphere",
+    "size": 3312,
+    "name": "FSDTOA",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "W/m2",
+    "mask": true,
+    "datatype": "float32"
+  },
+  "lev": {
+    "long_name": "hybrid level at midpoints (1000*(A+B))",
+    "size": 26,
+    "name": "lev",
+    "shape": [
+      26
+    ],
+    "units": "level",
+    "mask": true,
+    "datatype": "float64"
+  },
+  "CLDTOT": {
+    "long_name": "Vertically-integrated total cloud",
+    "size": 3312,
+    "name": "CLDTOT",
+    "shape": [
+      1,
+      46,
+      72
+    ],
+    "units": "fraction",
+    "mask": true,
+    "datatype": "float32"
+  }
+}

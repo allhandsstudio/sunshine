@@ -43,7 +43,7 @@ aws s3 cp \
 
 ./case1.run
 
-# prevent exit
+# prevent container exit
 while true; do
 	sleep 60
 done

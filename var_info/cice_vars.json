@@ -1,0 +1,1790 @@
+{
+  "alidr": {
+    "name": "alidr",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "near IR direct albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vicen001": {
+    "name": "vicen001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume, category  001",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "lonu_bounds": {
+    "name": "lonu_bounds",
+    "shape": [
+      116,
+      100,
+      4
+    ],
+    "long_name": "longitude boundaries of U cells",
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float32",
+    "size": 46400
+  },
+  "aerosnossl002": {
+    "name": "aerosnossl002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "qs": {
+    "name": "qs",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "internal snow heat content",
+    "units": "J",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "latu_bounds": {
+    "name": "latu_bounds",
+    "shape": [
+      116,
+      100,
+      4
+    ],
+    "long_name": "latitude boundaries of U cells",
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float32",
+    "size": 46400
+  },
+  "blkmask": {
+    "name": "blkmask",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "blockid of T grid cells",
+    "units": "unitless",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aicen004": {
+    "name": "aicen004",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area, category  004",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strength": {
+    "name": "strength",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "compressive ice strength",
+    "units": "N/m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "qi": {
+    "name": "qi",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "internal ice heat content",
+    "units": "J",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswabs": {
+    "name": "fswabs",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow/ice/ocn absorbed solar flux (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "apond005": {
+    "name": "apond005",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond concentration, category  005",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fsalt_ai": {
+    "name": "fsalt_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "salt flux ice to ocean",
+    "units": "kg/m^2/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "flat_ai": {
+    "name": "flat_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "latent heat flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswup": {
+    "name": "fswup",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "upward solar flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_ocn002": {
+    "name": "faero_ocn002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol flux to ocean",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswfac": {
+    "name": "fswfac",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "shortwave scaling factor",
+    "units": "1",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswabs_ai": {
+    "name": "fswabs_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow/ice/ocn absorbed solar flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dardg2dt": {
+    "name": "dardg2dt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ridge area formation rate",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "time_bounds": {
+    "name": "time_bounds",
+    "shape": [
+      1,
+      2
+    ],
+    "long_name": "boundaries for time-averaging interval",
+    "units": "days since 0000-01-01 00:00:00",
+    "mask": true,
+    "datatype": "float32",
+    "size": 2
+  },
+  "ANGLET": {
+    "name": "ANGLET",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "angle grid makes with latitude line on T grid",
+    "units": "radians",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strairx": {
+    "name": "strairx",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "atm/ice stress (x)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strcorx": {
+    "name": "strcorx",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "coriolis stress (x)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vicen004": {
+    "name": "vicen004",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume, category  004",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "snoice": {
+    "name": "snoice",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow-ice formation",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroicessl003": {
+    "name": "aeroicessl003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "melts": {
+    "name": "melts",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow melt",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswdn": {
+    "name": "fswdn",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "down solar flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_atm001": {
+    "name": "faero_atm001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol deposition rate",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_ocn001": {
+    "name": "faero_ocn001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol flux to ocean",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroiceint001": {
+    "name": "aeroiceint001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "TLAT": {
+    "name": "TLAT",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T grid center latitude",
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "albpnd": {
+    "name": "albpnd",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "flwdn": {
+    "name": "flwdn",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "down longwave flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aice": {
+    "name": "aice",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area  (aggregate)",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "transiy": {
+    "name": "transiy",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice mass transport (y) on North side",
+    "units": "kg/s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "shear": {
+    "name": "shear",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "strain rate (shear)",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_atm003": {
+    "name": "faero_atm003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol deposition rate",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aisnap": {
+    "name": "aisnap",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area snapshot",
+    "units": "",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fsurf_ai": {
+    "name": "fsurf_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "net surface heat flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "albsno": {
+    "name": "albsno",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fhocn_ai": {
+    "name": "fhocn_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "heat flux ice to ocean",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "Qref": {
+    "name": "Qref",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "2m reference specific humidity",
+    "units": "g/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "ULON": {
+    "name": "ULON",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "U grid center longitude",
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "meltt": {
+    "name": "meltt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "top ice melt",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vicen003": {
+    "name": "vicen003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume, category  003",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "flwup_ai": {
+    "name": "flwup_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "upward longwave flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fcondtop_ai": {
+    "name": "fcondtop_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "top surface conductive heat flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "HTE": {
+    "name": "HTE",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T cell width on East side",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "flwup": {
+    "name": "flwup",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "upward longwave flux (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dyt": {
+    "name": "dyt",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T cell height through middle",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strocny": {
+    "name": "strocny",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ocean/ice stress (y)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "sig1": {
+    "name": "sig1",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "norm. principal stress 1",
+    "units": "",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dardg1dt": {
+    "name": "dardg1dt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area ridging rate",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dxu": {
+    "name": "dxu",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "U cell width through middle",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strcory": {
+    "name": "strcory",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "coriolis stress (y)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aicen002": {
+    "name": "aicen002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area, category  002",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aerosnoint003": {
+    "name": "aerosnoint003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strocnx": {
+    "name": "strocnx",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ocean/ice stress (x)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "coszen": {
+    "name": "coszen",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "cosine of the zenith angle",
+    "units": "radian",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "daidtd": {
+    "name": "daidtd",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "area tendency dynamics",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswthru": {
+    "name": "fswthru",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "SW thru ice to ocean (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aerosnossl003": {
+    "name": "aerosnossl003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "ice_present": {
+    "name": "ice_present",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "fraction of time-avg interval that any ice is present",
+    "units": "1",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aerosnossl001": {
+    "name": "aerosnossl001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "evap": {
+    "name": "evap",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "evaporative water flux (cpl)",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "apond004": {
+    "name": "apond004",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond concentration, category  004",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "uvel": {
+    "name": "uvel",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice velocity (x)",
+    "units": "cm/s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "ANGLE": {
+    "name": "ANGLE",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "angle grid makes with latitude line on U grid",
+    "units": "radians",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fresh_ai": {
+    "name": "fresh_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "freshwtr flx ice to ocn",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "divu": {
+    "name": "divu",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "strain rate (divergence)",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dyu": {
+    "name": "dyu",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "U cell height through middle",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "hi": {
+    "name": "hi",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "grid cell mean ice thickness",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "tmask": {
+    "name": "tmask",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "mask of T grid cells",
+    "units": "unitless",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "latt_bounds": {
+    "name": "latt_bounds",
+    "shape": [
+      116,
+      100,
+      4
+    ],
+    "long_name": "latitude boundaries of T cells",
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float32",
+    "size": 46400
+  },
+  "rain_ai": {
+    "name": "rain_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "rainfall rate",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroicessl002": {
+    "name": "aeroicessl002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroicessl001": {
+    "name": "aeroicessl001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice ssl aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "FYarea": {
+    "name": "FYarea",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "first-year ice area",
+    "units": "",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_ocn003": {
+    "name": "faero_ocn003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol flux to ocean",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vvel": {
+    "name": "vvel",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice velocity (y)",
+    "units": "cm/s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aicen001": {
+    "name": "aicen001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area, category  001",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strairy": {
+    "name": "strairy",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "atm/ice stress (y)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "lont_bounds": {
+    "name": "lont_bounds",
+    "shape": [
+      116,
+      100,
+      4
+    ],
+    "long_name": "longitude boundaries of T cells",
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float32",
+    "size": 46400
+  },
+  "apond003": {
+    "name": "apond003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond concentration, category  003",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "rain": {
+    "name": "rain",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "rainfall rate (cpl)",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "HTN": {
+    "name": "HTN",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T cell width on North side",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "albice": {
+    "name": "albice",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "bare ice albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "snow_ai": {
+    "name": "snow_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snowfall rate",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aerosnoint001": {
+    "name": "aerosnoint001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "iage": {
+    "name": "iage",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "sea ice age",
+    "units": "years",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "apond001": {
+    "name": "apond001",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond concentration, category  001",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "frazil": {
+    "name": "frazil",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "frazil ice growth",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "meltb": {
+    "name": "meltb",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "basal ice melt",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "faero_atm002": {
+    "name": "faero_atm002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "aerosol deposition rate",
+    "units": "kg/m^2 s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "opening": {
+    "name": "opening",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "lead area opening rate",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "snow": {
+    "name": "snow",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snowfall rate (cpl)",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dvidtt": {
+    "name": "dvidtt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "volume tendency thermo",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dxt": {
+    "name": "dxt",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T cell width through middle",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fhocn": {
+    "name": "fhocn",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "heat flux ice to ocn (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "tarea": {
+    "name": "tarea",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "area of T grid cells",
+    "units": "m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fresh": {
+    "name": "fresh",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "freshwtr flx ice to ocn (cpl)",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "evap_ai": {
+    "name": "evap_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "evaporative water flux",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fsens": {
+    "name": "fsens",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "sensible heat flux (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroiceint002": {
+    "name": "aeroiceint002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "time": {
+    "name": "time",
+    "shape": [
+      1
+    ],
+    "long_name": "model time",
+    "units": "days since 0000-01-01 00:00:00",
+    "mask": true,
+    "datatype": "float32",
+    "size": 1
+  },
+  "meltl": {
+    "name": "meltl",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "lateral ice melt",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aicen003": {
+    "name": "aicen003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area, category  003",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aerosnoint002": {
+    "name": "aerosnoint002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "alvdr": {
+    "name": "alvdr",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "visible direct albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fsalt": {
+    "name": "fsalt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "salt flux ice to ocn (cpl)",
+    "units": "kg/m^2/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strintx": {
+    "name": "strintx",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "internal ice stress (x)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fsens_ai": {
+    "name": "fsens_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "sensible heat flux",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fswthru_ai": {
+    "name": "fswthru_ai",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "SW flux thru ice to ocean",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dvidtd": {
+    "name": "dvidtd",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "volume tendency dynamics",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "daidtt": {
+    "name": "daidtt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "area tendency thermo",
+    "units": "%/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "fs": {
+    "name": "fs",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "grid cell mean snow fraction",
+    "units": "",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "ULAT": {
+    "name": "ULAT",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "U grid center latitude",
+    "units": "degrees_north",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aicen005": {
+    "name": "aicen005",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice area, category  005",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vicen005": {
+    "name": "vicen005",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume, category  005",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "transix": {
+    "name": "transix",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice mass transport (x) on East side",
+    "units": "kg/s",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "trsig": {
+    "name": "trsig",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "internal stress tensor trace",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "sig2": {
+    "name": "sig2",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "norm. principal stress 2",
+    "units": "",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "flat": {
+    "name": "flat",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "latent heat flux (cpl)",
+    "units": "W/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "alidf": {
+    "name": "alidf",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "near IR diffuse albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "dvirdgdt": {
+    "name": "dvirdgdt",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume ridging rate",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "vicen002": {
+    "name": "vicen002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume, category  002",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "apond002": {
+    "name": "apond002",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "melt pond concentration, category  002",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "aeroiceint003": {
+    "name": "aeroiceint003",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice int aerosol mass",
+    "units": "kg/kg",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "alvdf": {
+    "name": "alvdf",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "visible diffuse albedo",
+    "units": "%",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "uarea": {
+    "name": "uarea",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "area of U grid cells",
+    "units": "m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "Tref": {
+    "name": "Tref",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "2m reference temperature",
+    "units": "C",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "Tair": {
+    "name": "Tair",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "air temperature",
+    "units": "C",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "hs": {
+    "name": "hs",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "grid cell mean snow thickness",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "hisnap": {
+    "name": "hisnap",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "ice volume snapshot",
+    "units": "m",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "TLON": {
+    "name": "TLON",
+    "shape": [
+      116,
+      100
+    ],
+    "long_name": "T grid center longitude",
+    "units": "degrees_east",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "Tsfc": {
+    "name": "Tsfc",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "snow/ice surface temperature",
+    "units": "degC",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "congel": {
+    "name": "congel",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "congelation ice growth",
+    "units": "cm/day",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  },
+  "strinty": {
+    "name": "strinty",
+    "shape": [
+      1,
+      116,
+      100
+    ],
+    "long_name": "internal ice stress (y)",
+    "units": "N/m^2",
+    "mask": true,
+    "datatype": "float32",
+    "size": 11600
+  }
+}
