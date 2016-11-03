@@ -1,0 +1,11 @@
+[main]
+GRID = "f19_g16"
+COMPSET = "B"
+
+[run]
+CASESTR = "B compset test"
+RUN_STARTDATE = "2000-01-01"
+STOP_OPTION = "ndays"
+STOP_N = "365"
+RESUBMIT = "50"
+
